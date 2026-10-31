@@ -5,9 +5,21 @@ declare global {
         namespace Internal {
             interface Keys extends KeysRegistry {
                 explicit: {
+                    '11f9e2c5835cdf90429b6260ceaad3db': {
+                        table: 'sys_scope_privilege'
+                        id: '11f9e2c5835cdf90429b6260ceaad3db'
+                    }
+                    '21f9e2c5835cdf90429b6260ceaad3f5': {
+                        table: 'sys_scope_privilege'
+                        id: '21f9e2c5835cdf90429b6260ceaad3f5'
+                    }
                     '5710ca7c83d05f90429b6260ceaad383': {
                         table: 'sys_script'
                         id: '5710ca7c83d05f90429b6260ceaad383'
+                    }
+                    '5df9e641835cdf90429b6260ceaad38c': {
+                        table: 'sys_scope_privilege'
+                        id: '5df9e641835cdf90429b6260ceaad38c'
                     }
                     '6280027483145f90429b6260ceaad3f3': {
                         table: 'sys_script_client'
@@ -17,6 +29,10 @@ declare global {
                         table: 'sys_script'
                         id: '738cfdf883d05f90429b6260ceaad39e'
                     }
+                    '9df9e2c5835cdf90429b6260ceaad3d5': {
+                        table: 'sys_scope_privilege'
+                        id: '9df9e2c5835cdf90429b6260ceaad3d5'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '02ecb8ce147f424099c384b03326fcc6'
@@ -24,6 +40,10 @@ declare global {
                     cb275db4839c1f90429b6260ceaad346: {
                         table: 'sys_script_include'
                         id: 'cb275db4839c1f90429b6260ceaad346'
+                    }
+                    edf9e2c5835cdf90429b6260ceaad3f8: {
+                        table: 'sys_scope_privilege'
+                        id: 'edf9e2c5835cdf90429b6260ceaad3f8'
                     }
                     package_json: {
                         table: 'sys_module'

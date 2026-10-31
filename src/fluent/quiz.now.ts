@@ -13,6 +13,7 @@ export const x_0221_fmqa_quiz = Table({
         number: StringColumn({
             label: 'Number',
             maxLength: 40,
+            mandatory: true,
         }),
         date: DateColumn({
             label: 'Date',
