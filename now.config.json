@@ -1,0 +1,6 @@
+{
+  "scope": "x_0221_fmqa",
+  "scopeId": "5fdf85b4835c1f90429b6260ceaad33b",
+  "name": "fmqa",
+  "tsconfigPath": "./src/server/tsconfig.json"
+}
