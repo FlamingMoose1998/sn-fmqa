@@ -28,6 +28,7 @@ declare global {
                     '738cfdf883d05f90429b6260ceaad39e': {
                         table: 'sys_script'
                         id: '738cfdf883d05f90429b6260ceaad39e'
+                        deleted: true
                     }
                     '9df9e2c5835cdf90429b6260ceaad3d5': {
                         table: 'sys_scope_privilege'
