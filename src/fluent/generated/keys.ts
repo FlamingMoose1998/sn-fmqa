@@ -53,6 +53,15 @@ declare global {
                 }
                 composite: [
                     {
+                        table: 'sys_documentation'
+                        id: '0949f045a6db460d9d3f2c20452e6202'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '14ad55b483dc1f90429b6260ceaad323'
                         key: {
@@ -67,6 +76,13 @@ declare global {
                             }
                             element: 'date'
                             position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '1635ea8e40004b77a58863b1dab33b65'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
                         }
                     },
                     {
@@ -94,6 +110,30 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '2619d86983d0d3d0429b6260ceaad36c'
+                        key: {
+                            sys_ui_section: {
+                                id: '6219dce583d0d3d0429b6260ceaad3ca'
+                                key: {
+                                    name: 'x_0221_fmqa_audience'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'name'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '2b2f90aff7a6451ca207923f5d76641a'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '2eb17d353ade489288c06adeb7d3bf35'
                         key: {
@@ -101,10 +141,45 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '2f7e690fdacd49d4a292d2474ad198e4'
+                        key: {
+                            name: 'x_0221_fmqa_quiz'
+                            element: 'audience'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '32c47991bc8f43fda07ca788c548254f'
                         key: {
                             name: 'x_0221_fmqa/vendor-react-dom--55da69dc'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '34d639383c6f420a8fbb63ea8e698f80'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '3748dce583d0d3d0429b6260ceaad364'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ccad15b483dc1f90429b6260ceaad3ca'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '6'
                         }
                     },
                     {
@@ -145,6 +220,21 @@ declare global {
                         id: '61e4c34064e74ab9ae9e6618258bc926'
                         key: {
                             name: 'x_0221_fmqa/vendor-react-dom--55da69dc.js.map'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '6219dce583d0d3d0429b6260ceaad3ca'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -195,6 +285,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '88ffb87c9b4041128c8d1966aedf247e'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
+                            element: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '96389c39368a437ab62e14af81e2b347'
                         key: {
@@ -209,6 +307,14 @@ declare global {
                         key: {
                             application_file: '61e4c34064e74ab9ae9e6618258bc926'
                             source_artifact: '6fcaffe7ba9e4df9a39103b43379dd51'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '9aa10567fc6c496aa80ce4ae039ce864'
+                        key: {
+                            name: 'x_0221_fmqa_quiz'
+                            element: 'audience'
                         }
                     },
                     {
@@ -246,6 +352,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'accdd5a9332a4b9a8255c1ab3d1d83f0'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
+                            element: 'name'
+                        }
+                    },
+                    {
                         table: 'sys_number'
                         id: 'b286aacd831cdf90429b6260ceaad3a7'
                         key: {
@@ -258,6 +372,23 @@ declare global {
                         id: 'b4a2dd7157aa40f3b64901cfe83e5ce9'
                         key: {
                             name: 'x_0221_fmqa_quiz'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b748dce583d0d3d0429b6260ceaad363'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ccad15b483dc1f90429b6260ceaad3ca'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'audience'
+                            position: '5'
                         }
                     },
                     {
@@ -312,6 +443,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'dcad55b483dc1f90429b6260ceaad323'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'ccad15b483dc1f90429b6260ceaad3ca'

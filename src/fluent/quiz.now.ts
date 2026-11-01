@@ -1,4 +1,4 @@
-import { Table, StringColumn, DateColumn } from '@servicenow/sdk/core'
+import { Table, StringColumn, DateColumn, ReferenceColumn } from '@servicenow/sdk/core'
 
 export const x_0221_fmqa_quiz = Table({
     name: 'x_0221_fmqa_quiz',
@@ -18,6 +18,10 @@ export const x_0221_fmqa_quiz = Table({
         date: DateColumn({
             label: 'Date',
         }),
+        audience: ReferenceColumn({
+            label: 'Audience',
+            referenceTable: 'x_0221_fmqa_audience',
+        }),
     },
     actions: {
         read: true,
@@ -31,7 +35,7 @@ export const x_0221_fmqa_quiz = Table({
     allowUiActions: true,
     allowWebServiceAccess: true,
     autoNumber: {
-        number: 6,
+        number: 11,
         numberOfDigits: 6,
         prefix: 'QUIZ',
     },

@@ -60,11 +60,20 @@ Record({
     },
 })
 Record({
-    $id: Now.ID['dcad55b483dc1f90429b6260ceaad323'],
+    $id: Now.ID['b748dce583d0d3d0429b6260ceaad363'],
+    table: 'sys_ui_element',
+    data: {
+        element: 'audience',
+        position: 5,
+        sys_ui_section: 'ccad15b483dc1f90429b6260ceaad3ca',
+    },
+})
+Record({
+    $id: Now.ID['3748dce583d0d3d0429b6260ceaad364'],
     table: 'sys_ui_element',
     data: {
         element: '.end_split',
-        position: 5,
+        position: 6,
         sys_ui_section: 'ccad15b483dc1f90429b6260ceaad3ca',
         type: '.end_split',
     },
