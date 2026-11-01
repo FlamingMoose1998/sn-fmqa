@@ -34,6 +34,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '9df9e2c5835cdf90429b6260ceaad3d5'
                     }
+                    'audience-module': {
+                        table: 'sys_app_module'
+                        id: '0799b5b457494f679fdb14baec88976f'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '02ecb8ce147f424099c384b03326fcc6'
@@ -46,9 +50,17 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'edf9e2c5835cdf90429b6260ceaad3f8'
                     }
+                    'fmqa-menu': {
+                        table: 'sys_app_application'
+                        id: '909321c447d946369251b50281daf536'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: '135f57da808247b0b1e88b3352b75d11'
+                    }
+                    'quiz-module': {
+                        table: 'sys_app_module'
+                        id: '4cf11341c46045c28423af2d0f6d6a7f'
                     }
                 }
                 composite: [
