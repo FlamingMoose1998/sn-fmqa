@@ -65,12 +65,86 @@ declare global {
                 }
                 composite: [
                     {
+                        table: 'sys_transform_entry'
+                        id: '01d74275839497d0429b6260ceaad3fb'
+                        key: {
+                            map: 'fc578ef1839497d0429b6260ceaad328'
+                            target_field: 'date'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0359ce39839497d0429b6260ceaad3d0'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f59ca39839497d0429b6260ceaad371'
+                                key: {
+                                    name: 'x_0221_fmqa_imp_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'u_date'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '0949f045a6db460d9d3f2c20452e6202'
                         key: {
                             name: 'x_0221_fmqa_audience'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0b59ce39839497d0429b6260ceaad3d3'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f59ca39839497d0429b6260ceaad371'
+                                key: {
+                                    name: 'x_0221_fmqa_imp_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '0f59ca39839497d0429b6260ceaad371'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0f59ce39839497d0429b6260ceaad3d1'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f59ca39839497d0429b6260ceaad371'
+                                key: {
+                                    name: 'x_0221_fmqa_imp_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'u_full_name'
+                            position: '4'
                         }
                     },
                     {
@@ -122,6 +196,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '22e6dd429bf94315a6869a1332790330'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'u_date'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '2619d86983d0d3d0429b6260ceaad36c'
                         key: {
@@ -146,6 +228,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '2cf3aae4c3714e7d95e6e4e2ecbfa642'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'u_number_old'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '2eb17d353ade489288c06adeb7d3bf35'
                         key: {
@@ -159,6 +249,14 @@ declare global {
                             name: 'x_0221_fmqa_quiz'
                             element: 'audience'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: '3138ce75839497d0429b6260ceaad328'
+                        key: {
+                            map: 'fc578ef1839497d0429b6260ceaad328'
+                            target_field: 'description'
                         }
                     },
                     {
@@ -220,6 +318,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_transform_entry'
+                        id: '45d74a35839497d0429b6260ceaad3fc'
+                        key: {
+                            map: 'fc578ef1839497d0429b6260ceaad328'
+                            target_field: 'name'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '4b5d0d6d8398d3d0429b6260ceaad3a7'
                         key: {
@@ -251,6 +357,14 @@ declare global {
                             }
                             element: '.split'
                             position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '5eb343614a184a79bde55087106e7eb3'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'NULL'
                         }
                     },
                     {
@@ -300,6 +414,41 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '790b4a6d7f6c4b8f87aa75836cfde194'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'u_name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '7c9dced8dde2489f90fa5f27634c1ce5'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'u_full_name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8359ce39839497d0429b6260ceaad3cf'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f59ca39839497d0429b6260ceaad371'
+                                key: {
+                                    name: 'x_0221_fmqa_imp_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'u_name'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '846a7f9020eb45b9a0e2c8feb1c67c10'
                         key: {
@@ -328,6 +477,57 @@ declare global {
                         key: {
                             name: 'x_0221_fmqa_audience'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8b59ce39839497d0429b6260ceaad3cd'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f59ca39839497d0429b6260ceaad371'
+                                key: {
+                                    name: 'x_0221_fmqa_imp_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8b59ce39839497d0429b6260ceaad3d2'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f59ca39839497d0429b6260ceaad371'
+                                key: {
+                                    name: 'x_0221_fmqa_imp_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'u_number_old'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8f59ce39839497d0429b6260ceaad3d0'
+                        key: {
+                            sys_ui_section: {
+                                id: '0f59ca39839497d0429b6260ceaad371'
+                                key: {
+                                    name: 'x_0221_fmqa_imp_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '3'
                         }
                     },
                     {
@@ -390,6 +590,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'aa5adfb57c2148b79f45f70d0640c31a'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'accdd5a9332a4b9a8255c1ab3d1d83f0'
                         key: {
@@ -414,10 +623,34 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'b340eac5ddbc4efb838c502af092c6f8'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'u_full_name'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: 'b4a2dd7157aa40f3b64901cfe83e5ce9'
                         key: {
                             name: 'x_0221_fmqa_quiz'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'b54ef42bad5b4a73aec00b6da0e26f20'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'u_number_old'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'b5660a71839497d0429b6260ceaad32f'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
                         }
                     },
                     {
@@ -484,6 +717,23 @@ declare global {
                             }
                             element: 'number'
                             position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd9af20af6e6349d298cfa744beadbee4'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'u_name'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'd9aff4bd61ae4c3db28f8e6fa3952ffe'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
+                            element: 'u_date'
+                            language: 'en'
                         }
                     },
                     {
