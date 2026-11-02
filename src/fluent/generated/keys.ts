@@ -30,6 +30,14 @@ declare global {
                         id: '738cfdf883d05f90429b6260ceaad39e'
                         deleted: true
                     }
+                    '786606f5835497d0429b6260ceaad3c3': {
+                        table: 'sys_data_source'
+                        id: '786606f5835497d0429b6260ceaad3c3'
+                    }
+                    '970702b1839497d0429b6260ceaad312': {
+                        table: 'sys_script'
+                        id: '970702b1839497d0429b6260ceaad312'
+                    }
                     '9df9e2c5835cdf90429b6260ceaad3d5': {
                         table: 'sys_scope_privilege'
                         id: '9df9e2c5835cdf90429b6260ceaad3d5'
@@ -46,9 +54,17 @@ declare global {
                         table: 'sys_script_include'
                         id: 'cb275db4839c1f90429b6260ceaad346'
                     }
+                    de664a71839497d0429b6260ceaad3f8: {
+                        table: 'sys_app_module'
+                        id: 'de664a71839497d0429b6260ceaad3f8'
+                    }
                     edf9e2c5835cdf90429b6260ceaad3f8: {
                         table: 'sys_scope_privilege'
                         id: 'edf9e2c5835cdf90429b6260ceaad3f8'
+                    }
+                    fc578ef1839497d0429b6260ceaad328: {
+                        table: 'sys_transform_map'
+                        id: 'fc578ef1839497d0429b6260ceaad328'
                     }
                     'fmqa-menu': {
                         table: 'sys_app_application'
@@ -315,6 +331,13 @@ declare global {
                             name: 'x_0221_fmqa_quiz'
                             element: 'date'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '405c0df73a254d51a02cf490aeab2936'
+                        key: {
+                            name: 'x_0221_fmqa_imp_quiz'
                         }
                     },
                     {
