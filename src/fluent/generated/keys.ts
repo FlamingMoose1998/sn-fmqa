@@ -34,6 +34,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '9df9e2c5835cdf90429b6260ceaad3d5'
                     }
+                    'audience-module': {
+                        table: 'sys_app_module'
+                        id: 'a3eb331248f84d298c69c6c5eb4101a5'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '02ecb8ce147f424099c384b03326fcc6'
@@ -46,9 +50,17 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: 'edf9e2c5835cdf90429b6260ceaad3f8'
                     }
+                    'fmqa-menu': {
+                        table: 'sys_app_application'
+                        id: '165ac4f10d12485eb37569f86426fe3c'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: '135f57da808247b0b1e88b3352b75d11'
+                    }
+                    'quiz-module': {
+                        table: 'sys_app_module'
+                        id: '076dc193fa6d4d84b326ae87c7eaca57'
                     }
                 }
                 composite: [
@@ -191,11 +203,37 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: '3977e464a8474be095223b90b188b521'
+                        key: {
+                            name: 'x_0221_fmqa_quiz'
+                            element: 'description'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: '3cc96d76b9f0439fb981257a30273d94'
                         key: {
                             name: 'x_0221_fmqa_quiz'
                             element: 'date'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4b5d0d6d8398d3d0429b6260ceaad3a7'
+                        key: {
+                            sys_ui_section: {
+                                id: 'ccad15b483dc1f90429b6260ceaad3ca'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'description'
+                            position: '7'
                         }
                     },
                     {
@@ -357,6 +395,14 @@ declare global {
                         key: {
                             name: 'x_0221_fmqa_audience'
                             element: 'name'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b1d73888ec0d4e7fba93e7904dfe9445'
+                        key: {
+                            name: 'x_0221_fmqa_quiz'
+                            element: 'description'
                         }
                     },
                     {

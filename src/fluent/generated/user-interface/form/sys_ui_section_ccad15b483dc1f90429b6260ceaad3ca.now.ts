@@ -78,3 +78,12 @@ Record({
         type: '.end_split',
     },
 })
+Record({
+    $id: Now.ID['4b5d0d6d8398d3d0429b6260ceaad3a7'],
+    table: 'sys_ui_element',
+    data: {
+        element: 'description',
+        position: 7,
+        sys_ui_section: 'ccad15b483dc1f90429b6260ceaad3ca',
+    },
+})

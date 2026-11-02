@@ -22,6 +22,10 @@ export const x_0221_fmqa_quiz = Table({
             label: 'Audience',
             referenceTable: 'x_0221_fmqa_audience',
         }),
+        description: StringColumn({
+            label: 'Description',
+            maxLength: 4000,
+        }),
     },
     actions: {
         read: true,
@@ -35,7 +39,7 @@ export const x_0221_fmqa_quiz = Table({
     allowUiActions: true,
     allowWebServiceAccess: true,
     autoNumber: {
-        number: 11,
+        number: 23,
         numberOfDigits: 6,
         prefix: 'QUIZ',
     },
