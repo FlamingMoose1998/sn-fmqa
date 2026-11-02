@@ -36,7 +36,7 @@ declare global {
                     }
                     'audience-module': {
                         table: 'sys_app_module'
-                        id: 'a3eb331248f84d298c69c6c5eb4101a5'
+                        id: '0799b5b457494f679fdb14baec88976f'
                     }
                     bom_json: {
                         table: 'sys_module'
@@ -52,7 +52,7 @@ declare global {
                     }
                     'fmqa-menu': {
                         table: 'sys_app_application'
-                        id: '165ac4f10d12485eb37569f86426fe3c'
+                        id: '909321c447d946369251b50281daf536'
                     }
                     package_json: {
                         table: 'sys_module'
@@ -60,7 +60,7 @@ declare global {
                     }
                     'quiz-module': {
                         table: 'sys_app_module'
-                        id: '076dc193fa6d4d84b326ae87c7eaca57'
+                        id: '4cf11341c46045c28423af2d0f6d6a7f'
                     }
                 }
                 composite: [
