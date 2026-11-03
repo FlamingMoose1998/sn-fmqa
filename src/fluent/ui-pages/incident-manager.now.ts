@@ -1,6 +1,6 @@
 import '@servicenow/sdk/global'
 import { UiPage } from '@servicenow/sdk/core'
-import incidentPage from '../../client/index.html'
+import incidentPage from '../../client/pages/incidentManager/index.html'
 
 UiPage({
     $id: Now.ID['incident-manager-page'],

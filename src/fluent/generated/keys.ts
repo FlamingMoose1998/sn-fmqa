@@ -13,6 +13,14 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '21f9e2c5835cdf90429b6260ceaad3f5'
                     }
+                    '30ee067583d497d0429b6260ceaad321': {
+                        table: 'sys_script_include'
+                        id: '30ee067583d497d0429b6260ceaad321'
+                    }
+                    '4c2f4e7583d497d0429b6260ceaad3d1': {
+                        table: 'sys_script_include'
+                        id: '4c2f4e7583d497d0429b6260ceaad3d1'
+                    }
                     '5710ca7c83d05f90429b6260ceaad383': {
                         table: 'sys_script'
                         id: '5710ca7c83d05f90429b6260ceaad383'
@@ -20,6 +28,10 @@ declare global {
                     '5df9e641835cdf90429b6260ceaad38c': {
                         table: 'sys_scope_privilege'
                         id: '5df9e641835cdf90429b6260ceaad38c'
+                    }
+                    '615fc2b583d497d0429b6260ceaad3f4': {
+                        table: 'sys_script_include'
+                        id: '615fc2b583d497d0429b6260ceaad3f4'
                     }
                     '6280027483145f90429b6260ceaad3f3': {
                         table: 'sys_script_client'
@@ -33,6 +45,14 @@ declare global {
                     '786606f5835497d0429b6260ceaad3c3': {
                         table: 'sys_data_source'
                         id: '786606f5835497d0429b6260ceaad3c3'
+                    }
+                    '82ae4a3583d497d0429b6260ceaad309': {
+                        table: 'sys_script_include'
+                        id: '82ae4a3583d497d0429b6260ceaad309'
+                    }
+                    '926e423583d497d0429b6260ceaad3cf': {
+                        table: 'sys_script_include'
+                        id: '926e423583d497d0429b6260ceaad3cf'
                     }
                     '970702b1839497d0429b6260ceaad312': {
                         table: 'sys_script'
@@ -778,6 +798,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_lib_asset'
+                        id: 'e9255e16bb1e4309bb857338f6ffdc35'
+                        key: {
+                            name: 'x_0221_fmqa/pages/incidentManager/main'
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact_m2m'
                         id: 'ebfa4f0ae77f4a9a891f1394a04d4f28'
                         key: {
@@ -790,6 +817,13 @@ declare global {
                         id: 'ed26a6558ab14ca09379bc447fa66483'
                         key: {
                             name: 'x_0221_fmqa/main.js.map'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'fd21566225b14924b27495737c48b277'
+                        key: {
+                            name: 'x_0221_fmqa/pages/incidentManager/main.js.map'
                         }
                     },
                 ]
