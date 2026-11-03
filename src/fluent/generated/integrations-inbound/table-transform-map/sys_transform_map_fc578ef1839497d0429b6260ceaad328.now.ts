@@ -17,7 +17,7 @@ ImportSet({
 	return ""; // return the value to be put into the target field
 
 })(source);`,
-            dateFormat: 'yyyy-MM-dd HH:mm:ss',
+            dateFormat: 'yyyy-MM-dd',
         },
         description: {
             sourceField: 'u_number_old',
