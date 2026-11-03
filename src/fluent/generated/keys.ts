@@ -226,6 +226,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '16fa5aa280c44d129d71922f5912ff68'
+                        deleted: true
                         key: {
                             application_file: '2eb17d353ade489288c06adeb7d3bf35'
                             source_artifact: '6fcaffe7ba9e4df9a39103b43379dd51'
@@ -234,6 +235,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '18e2828387ba4094baf0c7848c81e20f'
+                        deleted: true
                         key: {
                             application_file: '32c47991bc8f43fda07ca788c548254f'
                             source_artifact: '6fcaffe7ba9e4df9a39103b43379dd51'
@@ -242,6 +244,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '222b85961ae149efbe22a4e6730b3864'
+                        deleted: true
                         key: {
                             application_file: 'ed26a6558ab14ca09379bc447fa66483'
                             source_artifact: '6fcaffe7ba9e4df9a39103b43379dd51'
@@ -290,6 +293,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '2eb17d353ade489288c06adeb7d3bf35'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/main'
                         }
@@ -347,6 +351,7 @@ declare global {
                     {
                         table: 'sys_ui_page'
                         id: '39524dd05b8d4b10b521bdf140687bc6'
+                        deleted: true
                         key: {
                             endpoint: 'x_0221_fmqa_incident_manager.do'
                         }
@@ -483,6 +488,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact'
                         id: '6fcaffe7ba9e4df9a39103b43379dd51'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa_incident_manager.do - BYOUI Files'
                         }
@@ -631,6 +637,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '96f0ffaa08eb4346a83f74b183356b43'
+                        deleted: true
                         key: {
                             application_file: '61e4c34064e74ab9ae9e6618258bc926'
                             source_artifact: '6fcaffe7ba9e4df9a39103b43379dd51'
@@ -681,6 +688,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '9fd8edf458d741bc8a20858e93fa43a0'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main'
                         }
@@ -713,6 +721,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'af288e16ea614617a9bbeb41ad69f408'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main.js.map'
                         }
@@ -868,6 +877,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'e9255e16bb1e4309bb857338f6ffdc35'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main'
                         }
@@ -875,6 +885,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: 'ebfa4f0ae77f4a9a891f1394a04d4f28'
+                        deleted: true
                         key: {
                             application_file: '39524dd05b8d4b10b521bdf140687bc6'
                             source_artifact: '6fcaffe7ba9e4df9a39103b43379dd51'
@@ -883,6 +894,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'ed26a6558ab14ca09379bc447fa66483'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/main.js.map'
                         }
@@ -890,6 +902,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'fd21566225b14924b27495737c48b277'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main.js.map'
                         }
