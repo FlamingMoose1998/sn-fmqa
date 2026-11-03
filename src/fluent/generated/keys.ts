@@ -90,6 +90,14 @@ declare global {
                         table: 'sys_app_application'
                         id: '909321c447d946369251b50281daf536'
                     }
+                    'get-xml': {
+                        table: 'sys_ws_definition'
+                        id: 'a308dbbc3bf3436292c7f6042b6699e4'
+                    }
+                    'get-xml-route': {
+                        table: 'sys_ws_operation'
+                        id: '42329c63e75e47fa8a6cdc6e187bd4cf'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: '135f57da808247b0b1e88b3352b75d11'
