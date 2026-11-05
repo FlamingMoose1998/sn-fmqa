@@ -371,6 +371,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '35569a25c5794026aa9d243ad6225384'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
+                            element: 'color'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '3748dce583d0d3d0429b6260ceaad364'
                         key: {
@@ -950,6 +959,14 @@ declare global {
                                 }
                             }
                             sys_domain: 'global'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ce44e423823a40678e19284275507758'
+                        key: {
+                            name: 'x_0221_fmqa_audience'
+                            element: 'color'
                         }
                     },
                     {

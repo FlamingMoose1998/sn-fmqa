@@ -10,5 +10,9 @@ export const x_0221_fmqa_audience = Table({
             maxLength: 40,
             mandatory: true,
         }),
+        color: StringColumn({
+            label: 'Color',
+            maxLength: 20,
+        })
     },
 });
