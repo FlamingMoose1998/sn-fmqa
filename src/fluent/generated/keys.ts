@@ -200,6 +200,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_lib_asset'
+                        id: '0fd6f7593a54486bbecd46abd9ae2c8f'
+                        key: {
+                            name: 'x_0221_fmqa/pages/quizList/main.js.map'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: '12cbde24273a495abda27bf154e9dea3'
+                        deleted: true
+                        key: {
+                            name: 'x_0221_fmqa/vendor-react-dom--7ff6a980'
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '149b5b09626b4252b968dd92319173e8'
                         key: {
@@ -422,6 +437,22 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '4ce17fe68cba46699f93f7176f07cb75'
+                        key: {
+                            application_file: 'fbce080077754466847ecae34be92f64'
+                            source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '533c47bc6286412d9dccf3a0c9a86e42'
+                        key: {
+                            application_file: '0fd6f7593a54486bbecd46abd9ae2c8f'
+                            source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '58ad55b483dc1f90429b6260ceaad322'
                         key: {
@@ -575,6 +606,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_lib_asset'
+                        id: '8757819c4a3e4985bfc99c2a4feb74de'
+                        deleted: true
+                        key: {
+                            name: 'x_0221_fmqa/vendor-react-dom--7ff6a980.js.map'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '88ffb87c9b4041128c8d1966aedf247e'
                         key: {
@@ -710,12 +749,27 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'a4ac6b5907fc492c9241c78e4b1cb075'
+                        key: {
+                            application_file: '32c47991bc8f43fda07ca788c548254f'
+                            source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'aa5adfb57c2148b79f45f70d0640c31a'
                         key: {
                             name: 'x_0221_fmqa_imp_quiz'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_page'
+                        id: 'ab52b2138b724a9890e25e4b9cff581f'
+                        key: {
+                            endpoint: 'x_0221_fmqa_quiz_list.do'
                         }
                     },
                     {
@@ -766,6 +820,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact'
+                        id: 'b534932e8d0e46878967a272d93cc0ac'
+                        key: {
+                            name: 'x_0221_fmqa_quiz_list.do - BYOUI Files'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'b54ef42bad5b4a73aec00b6da0e26f20'
                         key: {
@@ -779,6 +840,15 @@ declare global {
                         id: 'b5660a71839497d0429b6260ceaad32f'
                         key: {
                             name: 'x_0221_fmqa_imp_quiz'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'b662c3d528a14447baf7ca3ecd8d44f4'
+                        deleted: true
+                        key: {
+                            application_file: '12cbde24273a495abda27bf154e9dea3'
+                            source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
                         }
                     },
                     {
@@ -796,6 +866,15 @@ declare global {
                             }
                             element: 'audience'
                             position: '5'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'ba7c93973d874890919a36304c9af6fa'
+                        deleted: true
+                        key: {
+                            application_file: '8757819c4a3e4985bfc99c2a4feb74de'
+                            source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
                         }
                     },
                     {
@@ -883,6 +962,22 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'e22a00e905a04fa9bb02ceecc4239f27'
+                        key: {
+                            application_file: 'ab52b2138b724a9890e25e4b9cff581f'
+                            source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'e73495e236f64bee9bb7f5751cb757db'
+                        key: {
+                            application_file: '61e4c34064e74ab9ae9e6618258bc926'
+                            source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: 'e9255e16bb1e4309bb857338f6ffdc35'
                         deleted: true
@@ -905,6 +1000,13 @@ declare global {
                         deleted: true
                         key: {
                             name: 'x_0221_fmqa/main.js.map'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'fbce080077754466847ecae34be92f64'
+                        key: {
+                            name: 'x_0221_fmqa/pages/quizList/main'
                         }
                     },
                     {
