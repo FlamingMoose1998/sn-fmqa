@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "react": "19.x",
-    "react-dom": "19.x"
+    "react-dom": "19.x",
+    "@servicenow/react-components": "^0.1.0"
   }
 }

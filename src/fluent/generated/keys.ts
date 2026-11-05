@@ -134,6 +134,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '0399524db42147fca13972dce84ec107'
+                        key: {
+                            application_file: '61e4c34064e74ab9ae9e6618258bc926'
+                            source_artifact: 'b4284819516a4d8589b26734cf442e4f'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '0949f045a6db460d9d3f2c20452e6202'
                         key: {
@@ -299,6 +307,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '281b803764144ccfa672f376ec02b5e8'
+                        key: {
+                            application_file: 'b8d6fc8cfd2843d59f6fdd0061ab628a'
+                            source_artifact: 'b4284819516a4d8589b26734cf442e4f'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: '2b2f90aff7a6451ca207923f5d76641a'
                         key: {
@@ -420,6 +436,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '4a820edee80340a38cf7fc3fd6ff6117'
+                        key: {
+                            application_file: '0fd6f7593a54486bbecd46abd9ae2c8f'
+                            source_artifact: 'b4284819516a4d8589b26734cf442e4f'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '4b5d0d6d8398d3d0429b6260ceaad3a7'
                         key: {
@@ -439,6 +463,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '4ce17fe68cba46699f93f7176f07cb75'
+                        deleted: true
                         key: {
                             application_file: 'fbce080077754466847ecae34be92f64'
                             source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
@@ -447,6 +472,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '533c47bc6286412d9dccf3a0c9a86e42'
+                        deleted: true
                         key: {
                             application_file: '0fd6f7593a54486bbecd46abd9ae2c8f'
                             source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
@@ -751,6 +777,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: 'a4ac6b5907fc492c9241c78e4b1cb075'
+                        deleted: true
                         key: {
                             application_file: '32c47991bc8f43fda07ca788c548254f'
                             source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
@@ -768,6 +795,7 @@ declare global {
                     {
                         table: 'sys_ui_page'
                         id: 'ab52b2138b724a9890e25e4b9cff581f'
+                        deleted: true
                         key: {
                             endpoint: 'x_0221_fmqa_quiz_list.do'
                         }
@@ -813,6 +841,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact'
+                        id: 'b4284819516a4d8589b26734cf442e4f'
+                        key: {
+                            name: 'x_0221_fmqa_ws_quiz_list.do - BYOUI Files'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: 'b4a2dd7157aa40f3b64901cfe83e5ce9'
                         key: {
@@ -822,6 +857,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact'
                         id: 'b534932e8d0e46878967a272d93cc0ac'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa_quiz_list.do - BYOUI Files'
                         }
@@ -866,6 +902,13 @@ declare global {
                             }
                             element: 'audience'
                             position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_page'
+                        id: 'b8d6fc8cfd2843d59f6fdd0061ab628a'
+                        key: {
+                            endpoint: 'x_0221_fmqa_ws_quiz_list.do'
                         }
                     },
                     {
@@ -964,6 +1007,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: 'e22a00e905a04fa9bb02ceecc4239f27'
+                        deleted: true
                         key: {
                             application_file: 'ab52b2138b724a9890e25e4b9cff581f'
                             source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
@@ -972,6 +1016,7 @@ declare global {
                     {
                         table: 'sn_glider_source_artifact_m2m'
                         id: 'e73495e236f64bee9bb7f5751cb757db'
+                        deleted: true
                         key: {
                             application_file: '61e4c34064e74ab9ae9e6618258bc926'
                             source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
@@ -1000,6 +1045,22 @@ declare global {
                         deleted: true
                         key: {
                             name: 'x_0221_fmqa/main.js.map'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'f7d2639c825b45fca78e101eadc84447'
+                        key: {
+                            application_file: '32c47991bc8f43fda07ca788c548254f'
+                            source_artifact: 'b4284819516a4d8589b26734cf442e4f'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'fa353544cc2841d5b446363b3007ec34'
+                        key: {
+                            application_file: 'fbce080077754466847ecae34be92f64'
+                            source_artifact: 'b4284819516a4d8589b26734cf442e4f'
                         }
                     },
                     {

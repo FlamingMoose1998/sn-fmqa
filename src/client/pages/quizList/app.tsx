@@ -9,7 +9,7 @@ export default function App() {
     const quizListService = useMemo(() => new TableService('x_0221_fmqa_quiz'), [])
 
     const refresh = async () => {
-        const data = await quizListService.get();
+        const data = await quizListService.get({ includeDisplayValues: true });
         setQuizList(data)
         console.log('app', quizList)
     }

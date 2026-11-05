@@ -4,7 +4,7 @@ import quizListPage from '../../client/pages/quizList/index.html'
 
 UiPage({
     $id: Now.ID['quiz-list'],
-    endpoint: 'x_0221_fmqa_quiz_list.do',
+    endpoint: 'x_0221_fmqa_ws_quiz_list.do',
     description: 'QuizList UI Page',
     category: 'general',
     html: quizListPage,
