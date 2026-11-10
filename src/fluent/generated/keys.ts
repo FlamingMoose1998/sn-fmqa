@@ -13,6 +13,10 @@ declare global {
                         table: 'sys_scope_privilege'
                         id: '21f9e2c5835cdf90429b6260ceaad3f5'
                     }
+                    '282f429483241310429b6260ceaad3c1': {
+                        table: 'sys_scope_privilege'
+                        id: '282f429483241310429b6260ceaad3c1'
+                    }
                     '30ee067583d497d0429b6260ceaad321': {
                         table: 'sys_script_include'
                         id: '30ee067583d497d0429b6260ceaad321'
@@ -37,10 +41,22 @@ declare global {
                         table: 'sys_script_client'
                         id: '6280027483145f90429b6260ceaad3f3'
                     }
+                    '62f4275883a01310429b6260ceaad3ed': {
+                        table: 'sys_data_policy2'
+                        id: '62f4275883a01310429b6260ceaad3ed'
+                    }
+                    '712cc6dc83e01310429b6260ceaad303': {
+                        table: 'sys_scope_privilege'
+                        id: '712cc6dc83e01310429b6260ceaad303'
+                    }
                     '738cfdf883d05f90429b6260ceaad39e': {
                         table: 'sys_script'
                         id: '738cfdf883d05f90429b6260ceaad39e'
                         deleted: true
+                    }
+                    '77cbca9c83e01310429b6260ceaad3a6': {
+                        table: 'sys_script_include'
+                        id: '77cbca9c83e01310429b6260ceaad3a6'
                     }
                     '786606f5835497d0429b6260ceaad3c3': {
                         table: 'sys_data_source'
@@ -65,6 +81,7 @@ declare global {
                     'audience-module': {
                         table: 'sys_app_module'
                         id: '0799b5b457494f679fdb14baec88976f'
+                        deleted: true
                     }
                     b9ec5a4b83985314429b6260ceaad3ce: {
                         table: 'sys_scope_privilege'
@@ -97,6 +114,7 @@ declare global {
                     'fmqa-menu': {
                         table: 'sys_app_application'
                         id: '909321c447d946369251b50281daf536'
+                        deleted: true
                     }
                     'get-xml': {
                         table: 'sys_ws_definition'
@@ -106,13 +124,51 @@ declare global {
                         table: 'sys_ws_operation'
                         id: '42329c63e75e47fa8a6cdc6e187bd4cf'
                     }
+                    'menu-fmqa': {
+                        table: 'sys_app_application'
+                        id: '1fae50716b1843b6ad1328da6111fe0f'
+                    }
+                    'module-audience': {
+                        table: 'sys_app_module'
+                        id: 'f880b0ce61c14feba838f40ff1113be9'
+                    }
+                    'module-category': {
+                        table: 'sys_app_module'
+                        id: 'bc2b991694a94f928d01aff0eb96a08d'
+                    }
+                    'module-question': {
+                        table: 'sys_app_module'
+                        id: '4090bf33aaa0466f8147d44cbd08f144'
+                    }
+                    'module-quiz': {
+                        table: 'sys_app_module'
+                        id: '500c5e48315d4ed4a667f46cdd494565'
+                    }
+                    'module-raw-json': {
+                        table: 'sys_app_module'
+                        id: '686cd01b223d4a83aeba72ba6a7914c2'
+                    }
+                    'module-round': {
+                        table: 'sys_app_module'
+                        id: '9560b46e01714fd487b022083ee9a6e2'
+                    }
+                    'module-script-includes': {
+                        table: 'sys_app_module'
+                        id: 'f7bd6701d8604d4e8c0eac61b6edffe6'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: '135f57da808247b0b1e88b3352b75d11'
                     }
+                    'question-module': {
+                        table: 'sys_app_module'
+                        id: '5f94fdbfb84845eb937aaa00fb34e113'
+                        deleted: true
+                    }
                     'quiz-module': {
                         table: 'sys_app_module'
                         id: '4cf11341c46045c28423af2d0f6d6a7f'
+                        deleted: true
                     }
                     'quiz-related-list': {
                         table: 'sys_ui_related_list'
@@ -126,6 +182,16 @@ declare global {
                         table: 'sys_relationship'
                         id: 'af6669b8c1eb4caeb2689cbb67313fc5'
                     }
+                    'raw-json-module': {
+                        table: 'sys_app_module'
+                        id: 'e684616773d143b4aa3161505bd46c94'
+                        deleted: true
+                    }
+                    'round-module': {
+                        table: 'sys_app_module'
+                        id: 'a55b2ad41b3445a3b966f3eefb3c9367'
+                        deleted: true
+                    }
                     'round-questions-entry': {
                         table: 'sys_ui_related_list_entry'
                         id: 'e64b073b5a7d40508563bb31f2cffeb9'
@@ -137,6 +203,18 @@ declare global {
                     'round-related-list': {
                         table: 'sys_ui_related_list'
                         id: '0c1e6eb3e6154877948c859bb111c661'
+                    }
+                    'separator-development': {
+                        table: 'sys_app_module'
+                        id: '5422490e93a8467e9ad460e087ed50c7'
+                    }
+                    'separator-main-data': {
+                        table: 'sys_app_module'
+                        id: '07d91e9fe90547b3bf90a671f8a6d705'
+                    }
+                    'separator-support-data': {
+                        table: 'sys_app_module'
+                        id: '98a912bce045486ebe236014ec8c71fe'
                     }
                 }
                 composite: [
@@ -445,6 +523,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_policy_action'
+                        id: '0f756b9883a01310429b6260ceaad310'
+                        key: {
+                            ui_policy: '3065279883a01310429b6260ceaad370'
+                            field: 'p1'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '0fd6f7593a54486bbecd46abd9ae2c8f'
                         key: {
@@ -589,6 +675,14 @@ declare global {
                         key: {
                             application_file: '32c47991bc8f43fda07ca788c548254f'
                             source_artifact: '6fcaffe7ba9e4df9a39103b43379dd51'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy_action'
+                        id: '19a5ef9883a01310429b6260ceaad36d'
+                        key: {
+                            ui_policy: '3065279883a01310429b6260ceaad370'
+                            field: 'p2'
                         }
                     },
                     {
@@ -770,6 +864,14 @@ declare global {
                             name: 'x_0221_fmqa_quiz'
                             element: 'audience'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy'
+                        id: '3065279883a01310429b6260ceaad370'
+                        key: {
+                            table: 'x_0221_fmqa_question'
+                            short_description: 'Show fields based on question type'
                         }
                     },
                     {
@@ -1018,6 +1120,14 @@ declare global {
                         key: {
                             name: 'x_0221_fmqa_round_question'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy_action'
+                        id: '44b563d883a01310429b6260ceaad3f1'
+                        key: {
+                            ui_policy: '3065279883a01310429b6260ceaad370'
+                            field: 'p4'
                         }
                     },
                     {
@@ -1976,6 +2086,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_policy_action'
+                        id: '9b65a79883a01310429b6260ceaad3b7'
+                        key: {
+                            ui_policy: '3065279883a01310429b6260ceaad370'
+                            field: 'qa'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '9ba26f924eec4772aeac89069fb1bd11'
                         key: {
@@ -2039,7 +2157,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '9fd8edf458d741bc8a20858e93fa43a0'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main'
                         }
@@ -2156,7 +2274,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'af288e16ea614617a9bbeb41ad69f408'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main.js.map'
                         }
@@ -2765,6 +2883,14 @@ declare global {
                             name: 'x_0221_fmqa_round'
                             element: 'theme'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy_action'
+                        id: 'e6a523d883a01310429b6260ceaad36e'
+                        key: {
+                            ui_policy: '3065279883a01310429b6260ceaad370'
+                            field: 'p3'
                         }
                     },
                     {

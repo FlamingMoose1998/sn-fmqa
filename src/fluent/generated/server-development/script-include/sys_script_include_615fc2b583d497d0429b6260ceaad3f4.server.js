@@ -68,9 +68,7 @@ ioQuestion.prototype = {
         throw new Error('invalid question type')
     }
 
-    const tableName = (questionJson.type === '1234') ? 'x_0221_fmqa_question1234' : 'x_0221_fmqa_question';
-	this.logger.log('tableName', tableName)
-    const questionSysId = io.insertRecord(tableName, questionJson)
+    const questionSysId = io.insertRecord('x_0221_fmqa_question', questionJson)
     if (typeof roundSysId === 'string') {
       io.insertRecord('x_0221_fmqa_round_question', {
         round: roundSysId,

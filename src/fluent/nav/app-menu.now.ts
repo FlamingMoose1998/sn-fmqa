@@ -2,15 +2,26 @@ import "@servicenow/sdk/global";
 import { ApplicationMenu, Record } from "@servicenow/sdk/core";
 
 const appMenu = ApplicationMenu({
-    $id: Now.ID["fmqa-menu"],
+    $id: Now.ID["menu-fmqa"],
     title: "FMQA",
     hint: "Quiz management application",
     active: true,
 });
 
-// Table modules
 Record({
-    $id: Now.ID["quiz-module"],
+    $id: Now.ID["separator-main-data"],
+    table: "sys_app_module",
+    data: {
+        title: "Main data",
+        application: appMenu,
+        link_type: "SEPARATOR",
+        active: true,
+        order: 1000,
+    },
+});
+
+Record({
+    $id: Now.ID["module-quiz"],
     table: "sys_app_module",
     data: {
         title: "Quizzes",
@@ -18,12 +29,64 @@ Record({
         link_type: "LIST",
         name: "x_0221_fmqa_quiz",
         active: true,
-        order: 100,
+        order: 1010,
     },
 });
 
 Record({
-    $id: Now.ID["audience-module"],
+    $id: Now.ID["module-round"],
+    table: "sys_app_module",
+    data: {
+        title: "Rounds",
+        application: appMenu,
+        link_type: "LIST",
+        name: "x_0221_fmqa_round",
+        active: true,
+        order: 1020,
+    },
+});
+
+Record({
+    $id: Now.ID["module-question"],
+    table: "sys_app_module",
+    data: {
+        title: "Questions",
+        application: appMenu,
+        link_type: "LIST",
+        name: "x_0221_fmqa_question",
+        active: true,
+        order: 1030,
+    },
+});
+
+Record({
+    $id: Now.ID["separator-support-data"],
+    table: "sys_app_module",
+    data: {
+        title: "Support data",
+        application: appMenu,
+        link_type: "SEPARATOR",
+        active: true,
+        order: 2000,
+    },
+});
+
+
+Record({
+    $id: Now.ID["module-category"],
+    table: "sys_app_module",
+    data: {
+        title: "Categories",
+        application: appMenu,
+        link_type: "LIST",
+        name: "x_0221_fmqa_category",
+        active: true,
+        order: 2010,
+    },
+});
+
+Record({
+    $id: Now.ID["module-audience"],
     table: "sys_app_module",
     data: {
         title: "Audiences",
@@ -31,88 +94,46 @@ Record({
         link_type: "LIST",
         name: "x_0221_fmqa_audience",
         active: true,
-        order: 500,
-    },
-});
-
-
-/*
-Record({
-    $id: Now.ID["round-module"],
-    table: "sys_app_module",
-    data: {
-        title: "Rounds",
-        application: appMenu,
-        link_type: "LIST",
-        name: "x_0221_quiz_app_round",
-        active: true,
-        order: 200,
+        order: 2020,
     },
 });
 
 Record({
-    $id: Now.ID["question-module"],
-    table: "sys_app_module",
-    data: {
-        title: "Questions",
-        application: appMenu,
-        link_type: "LIST",
-        name: "x_0221_quiz_app_question",
-        active: true,
-        order: 300,
-    },
-});
-
-Record({
-    $id: Now.ID["category-module"],
-    table: "sys_app_module",
-    data: {
-        title: "Categories",
-        application: appMenu,
-        link_type: "LIST",
-        name: "x_0221_quiz_app_category",
-        active: true,
-        order: 400,
-    },
-});
-
-// Separator
-Record({
-    $id: Now.ID["tools-separator"],
-    table: "sys_app_module",
-    data: {
-        title: "Tools",
-        application: appMenu,
-        link_type: "SEPARATOR",
-        active: true,
-        order: 600,
-    },
-});
-
-// Import page module
-Record({
-    $id: Now.ID["quiz-import-module"],
-    table: "sys_app_module",
-    data: {
-        title: "Import Quiz",
-        application: appMenu,
-        link_type: "DIRECT",
-        query: "x_0221_quiz_app_import.do",
-        active: true,
-        order: 700,
-    },
-});
-
-Record({
-    $id: Now.ID["raw-json-module"],
+    $id: Now.ID["module-raw-json"],
     table: "sys_app_module",
     data: {
         title: "Raw JSON",
         application: appMenu,
         link_type: "LIST",
-        name: "x_0221_quiz_app_raw_json",
+        name: "x_0221_fmqa_raw_json",
         active: true,
-        order: 800,
+        order: 2030,
     },
 });
-*/
+
+Record({
+    $id: Now.ID["separator-development"],
+    table: "sys_app_module",
+    data: {
+        title: "Development",
+        application: appMenu,
+        link_type: "SEPARATOR",
+        active: true,
+        order: 3000,
+    },
+});
+
+Record({
+    $id: Now.ID["module-script-includes"],
+    table: "sys_app_module",
+    data: {
+        title: "Script includes",
+        application: appMenu,
+        link_type: "LIST",
+        name: "sys_script_include",
+        filter: 'sys_scope=5fdf85b4835c1f90429b6260ceaad33b',
+        active: true,
+        order: 3010,
+    },
+});
+

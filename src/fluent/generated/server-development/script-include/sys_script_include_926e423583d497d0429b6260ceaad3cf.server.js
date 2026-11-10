@@ -7,7 +7,7 @@ io.prototype = {
 
     const gr = new GlideRecord(table)
     fieldList.forEach((fieldName) => {
-      gr.setValue(fieldName, record[fieldName])
+      gr.setValue(fieldName, record[fieldName] || '')
     })
 
     return gr.insert();
