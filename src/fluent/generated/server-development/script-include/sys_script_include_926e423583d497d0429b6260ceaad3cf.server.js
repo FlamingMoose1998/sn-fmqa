@@ -13,6 +13,30 @@ io.prototype = {
     return gr.insert();
   },
 
+  upsertRecord: function(table, record, matchField, matchValue, fields = null){
+    if (typeof matchField !== 'string') throw new Error('upsertRecord - matchField is missing')
+    if (typeof matchValue !== 'string') throw new Error('upsertRecord - matchValue is missing')
+
+    const fieldList = fields === null ? Object.keys(record) : fields
+	const gr = new GlideRecord(table)
+    gr.addQuery(matchField, matchValue);
+    gr.setLimit(1);
+    gr.query();
+
+    const found = gr.next();
+
+    fieldList.forEach((fieldName) => {
+      gr.setValue(fieldName, record[fieldName])
+    })
+
+    if (found){
+      gr.update();
+      return gr.getValue('sys_id');
+    } else {
+      return gr.insert(); 
+    }  
+  },
+
   /**
    * Finds the first record for which the field's value matches value
    * and returns its sys_id.

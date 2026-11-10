@@ -39,7 +39,7 @@ export const x_0221_fmqa_quiz = Table({
     allowUiActions: true,
     allowWebServiceAccess: true,
     autoNumber: {
-        number: 165,
+        number: 170,
         numberOfDigits: 6,
         prefix: 'QUIZ',
     },

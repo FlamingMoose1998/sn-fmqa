@@ -1,0 +1,38 @@
+.quiz-card-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 8px;
+}
+
+.quiz-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-card-number {
+    font-size: var(--now-static-font-size--sm, 0.75rem);
+    color: rgb(var(--now-color_text--tertiary, 55, 68, 74));
+    margin: 0;
+}
+
+.quiz-card-name {
+    font-size: var(--now-static-font-size--lg, 1.25rem);
+    font-weight: 600;
+    color: rgb(var(--now-color_text--primary, 16, 23, 26));
+    margin: 0;
+    flex: 1;
+}
+
+.quiz-card-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+.quiz-card-date {
+    font-size: var(--now-static-font-size--sm, 0.75rem);
+    color: rgb(var(--now-color_text--tertiary, 55, 68, 74));
+    margin: 0;
+}

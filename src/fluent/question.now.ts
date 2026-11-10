@@ -5,15 +5,6 @@ export const x_0221_fmqa_question = Table({
     label: 'Question',
     display: 'question',
     schema: {
-        question: StringColumn({
-            label: 'Question',
-            maxLength: 400,
-            mandatory: true,
-        }),
-        answer: StringColumn({
-            label: 'Answer',
-            maxLength: 400,
-        }),
         qa: ReferenceColumn({
             label: 'QA',
             referenceTable: 'x_0221_fmqa_qa',

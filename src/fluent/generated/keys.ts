@@ -66,6 +66,10 @@ declare global {
                         table: 'sys_app_module'
                         id: '0799b5b457494f679fdb14baec88976f'
                     }
+                    b9ec5a4b83985314429b6260ceaad3ce: {
+                        table: 'sys_scope_privilege'
+                        id: 'b9ec5a4b83985314429b6260ceaad3ce'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '02ecb8ce147f424099c384b03326fcc6'
@@ -77,6 +81,10 @@ declare global {
                     de664a71839497d0429b6260ceaad3f8: {
                         table: 'sys_app_module'
                         id: 'de664a71839497d0429b6260ceaad3f8'
+                    }
+                    ea6f9200832c1310429b6260ceaad3a3: {
+                        table: 'sys_scope_privilege'
+                        id: 'ea6f9200832c1310429b6260ceaad3a3'
                     }
                     edf9e2c5835cdf90429b6260ceaad3f8: {
                         table: 'sys_scope_privilege'
@@ -149,6 +157,23 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '0288b5d083601310429b6260ceaad31b'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'p2'
+                            position: '14'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '0359ce39839497d0429b6260ceaad3d0'
                         key: {
                             sys_ui_section: {
@@ -170,6 +195,59 @@ declare global {
                         key: {
                             application_file: '61e4c34064e74ab9ae9e6618258bc926'
                             source_artifact: 'b4284819516a4d8589b26734cf442e4f'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0688b5d083601310429b6260ceaad318'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '10'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '06963d5c83201310429b6260ceaad347'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'p3'
+                            position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '06963d5c83201310429b6260ceaad35b'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'p2'
+                            position: '15'
                         }
                     },
                     {
@@ -199,6 +277,41 @@ declare global {
                             name: 'x_0221_fmqa_audience'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0a88b5d083601310429b6260ceaad315'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'difficulty'
+                            position: '6'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0a963d5c83201310429b6260ceaad358'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'p1'
+                            position: '11'
                         }
                     },
                     {
@@ -240,10 +353,63 @@ declare global {
                     {
                         table: 'sys_documentation'
                         id: '0de265b0d6814f09af40c83d5d43fcba'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa_question'
                             element: 'question'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0e88b5d083601310429b6260ceaad312'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'qa.answer'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0e88b5d083601310429b6260ceaad31d'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '18'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '0e963d5c83201310429b6260ceaad355'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'difficulty'
+                            position: '7'
                         }
                     },
                     {
@@ -290,6 +456,23 @@ declare global {
                         id: '113d91453af44924a02861ac8988dae7'
                         key: {
                             name: 'x_0221_fmqa_round'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '11ef9e40832c1310429b6260ceaad3cc'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f4ef1e40832c1310429b6260ceaad3b5'
+                                key: {
+                                    name: 'x_0221_fmqa_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '2'
                         }
                     },
                     {
@@ -409,6 +592,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '19ef9e40832c1310429b6260ceaad3c9'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f4ef1e40832c1310429b6260ceaad3b5'
+                                key: {
+                                    name: 'x_0221_fmqa_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '1d65de78bd7c4df3bbaf667040f7d13d'
                         key: {
@@ -420,6 +620,7 @@ declare global {
                     {
                         table: 'sys_dictionary'
                         id: '1daae66741c14814b37e706333d1632d'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa_question'
                             element: 'answer'
@@ -580,6 +781,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '32812e44832c1310429b6260ceaad374'
+                        key: {
+                            sys_ui_section: {
+                                id: '36812a40832c1310429b6260ceaad3a4'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '3'
+                        }
+                    },
+                    {
                         table: 'sys_ux_lib_asset'
                         id: '32c47991bc8f43fda07ca788c548254f'
                         key: {
@@ -619,6 +837,21 @@ declare global {
                             name: 'x_0221_fmqa_audience'
                             element: 'color'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '36812a40832c1310429b6260ceaad3a4'
+                        key: {
+                            name: 'x_0221_fmqa_quiz_round'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -719,6 +952,58 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '4288b5d083601310429b6260ceaad312'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'qa.question'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4288b5d083601310429b6260ceaad31d'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '17'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '42963d5c83201310429b6260ceaad355'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'type'
+                            position: '6'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '4367878e26fe45eb91d0585bb6ce4d20'
                         key: {
@@ -776,11 +1061,99 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '4688b5d083601310429b6260ceaad31a'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'p1'
+                            position: '13'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '46963d5c83201310429b6260ceaad35d'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'fullscreen'
+                            position: '18'
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact_m2m'
                         id: '4a820edee80340a38cf7fc3fd6ff6117'
                         key: {
                             application_file: '0fd6f7593a54486bbecd46abd9ae2c8f'
                             source_artifact: 'b4284819516a4d8589b26734cf442e4f'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4a88b5d083601310429b6260ceaad317'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'fullscreen'
+                            position: '9'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4a963d5c83201310429b6260ceaad346'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'media_type'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4a963d5c83201310429b6260ceaad35a'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'category'
+                            position: '14'
                         }
                     },
                     {
@@ -807,6 +1180,58 @@ declare global {
                         key: {
                             application_file: 'fbce080077754466847ecae34be92f64'
                             source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4e88b5d083601310429b6260ceaad310'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4e88b5d083601310429b6260ceaad314'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'category'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4e963d5c83201310429b6260ceaad357'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '10'
                         }
                     },
                     {
@@ -845,6 +1270,23 @@ declare global {
                             name: 'x_0221_fmqa_quiz_round'
                             element: 'quiz'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '55ef9e40832c1310429b6260ceaad3cb'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f4ef1e40832c1310429b6260ceaad3b5'
+                                key: {
+                                    name: 'x_0221_fmqa_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'type'
+                            position: '1'
                         }
                     },
                     {
@@ -1043,6 +1485,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '76812e44832c1310429b6260ceaad373'
+                        key: {
+                            sys_ui_section: {
+                                id: '36812a40832c1310429b6260ceaad3a4'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'quiz'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact'
                         id: '78a2730c3c964d3e9438b97cc4568aad'
                         key: {
@@ -1056,6 +1515,21 @@ declare global {
                             name: 'x_0221_fmqa_imp_quiz'
                             element: 'u_name'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_section'
+                        id: '7996391c83201310429b6260ceaad3b0'
+                        key: {
+                            name: 'x_0221_fmqa_question'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
                         }
                     },
                     {
@@ -1085,6 +1559,59 @@ declare global {
                             value: 'image'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8288b5d083601310429b6260ceaad314'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'type'
+                            position: '4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '82963d5c83201310429b6260ceaad343'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'question'
+                            position: '0'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '82963d5c83201310429b6260ceaad357'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'answer'
+                            position: '9'
                         }
                     },
                     {
@@ -1128,6 +1655,41 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '8688b5d083601310429b6260ceaad31c'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'p4'
+                            position: '16'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '86963d5c83201310429b6260ceaad354'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '5'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '8754cd7f4bee46a7ba1c874b70a311b4'
                         key: {
@@ -1158,6 +1720,41 @@ declare global {
                             name: 'x_0221_fmqa_category'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8a88b5d083601310429b6260ceaad319'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'qa'
+                            position: '12'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8a963d5c83201310429b6260ceaad35c'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'filename'
+                            position: '17'
                         }
                     },
                     {
@@ -1216,6 +1813,59 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: '8e88b5d083601310429b6260ceaad316'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'filename'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8e963d5c83201310429b6260ceaad345'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'qa'
+                            position: '2'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '8e963d5c83201310429b6260ceaad359'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '13'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: '8f59ce39839497d0429b6260ceaad3d0'
                         key: {
                             sys_ui_section: {
@@ -1255,6 +1905,23 @@ declare global {
                             name: 'x_0221_fmqa_question'
                             element: 'p1'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '95ef9e40832c1310429b6260ceaad3cd'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f4ef1e40832c1310429b6260ceaad3b5'
+                                key: {
+                                    name: 'x_0221_fmqa_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '4'
                         }
                     },
                     {
@@ -1372,7 +2039,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '9fd8edf458d741bc8a20858e93fa43a0'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main'
                         }
@@ -1430,6 +2097,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'a7e3987b8350d714429b6260ceaad315'
+                        key: {
+                            sys_ui_section: {
+                                id: 'abe390738310d714429b6260ceaad3f1'
+                                key: {
+                                    name: 'x_0221_fmqa_raw_json'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'name'
+                            position: '0'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'aa5adfb57c2148b79f45f70d0640c31a'
                         key: {
@@ -1447,6 +2131,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'abe390738310d714429b6260ceaad3f1'
+                        key: {
+                            name: 'x_0221_fmqa_raw_json'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'accdd5a9332a4b9a8255c1ab3d1d83f0'
                         key: {
@@ -1457,9 +2156,26 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'af288e16ea614617a9bbeb41ad69f408'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main.js.map'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'afe3987b8350d714429b6260ceaad316'
+                        key: {
+                            sys_ui_section: {
+                                id: 'abe390738310d714429b6260ceaad3f1'
+                                key: {
+                                    name: 'x_0221_fmqa_raw_json'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'json'
+                            position: '1'
                         }
                     },
                     {
@@ -1543,6 +2259,23 @@ declare global {
                     },
                     {
                         table: 'sys_ui_element'
+                        id: 'b6812e44832c1310429b6260ceaad375'
+                        key: {
+                            sys_ui_section: {
+                                id: '36812a40832c1310429b6260ceaad3a4'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
                         id: 'b748dce583d0d3d0429b6260ceaad363'
                         key: {
                             sys_ui_section: {
@@ -1572,6 +2305,23 @@ declare global {
                         key: {
                             application_file: '8757819c4a3e4985bfc99c2a4feb74de'
                             source_artifact: 'b534932e8d0e46878967a272d93cc0ac'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ba812e44832c1310429b6260ceaad372'
+                        key: {
+                            sys_ui_section: {
+                                id: '36812a40832c1310429b6260ceaad3a4'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'number'
+                            position: '1'
                         }
                     },
                     {
@@ -1673,6 +2423,59 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: 'c288b5d083601310429b6260ceaad316'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'media_type'
+                            position: '7'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'c2963d5c83201310429b6260ceaad345'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '1'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'c2963d5c83201310429b6260ceaad359'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'p4'
+                            position: '12'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'c40b9cc1a45a41c1801f8604b07414d4'
                         key: {
@@ -1687,6 +2490,58 @@ declare global {
                             name: 'x_0221_fmqa_raw_json'
                             element: 'name'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'c688b5d083601310429b6260ceaad313'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.split'
+                            position: '3'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'c6963d5c83201310429b6260ceaad356'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '8'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ca88b5d083601310429b6260ceaad31b'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'p3'
+                            position: '15'
                         }
                     },
                     {
@@ -1726,6 +2581,41 @@ declare global {
                         key: {
                             name: 'x_0221_fmqa_audience'
                             element: 'color'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ce88b5d083601310429b6260ceaad318'
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '11'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'ce963d5c83201310429b6260ceaad35b'
+                        deleted: true
+                        key: {
+                            sys_ui_section: {
+                                id: '7996391c83201310429b6260ceaad3b0'
+                                key: {
+                                    name: 'x_0221_fmqa_question'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.end_split'
+                            position: '16'
                         }
                     },
                     {
@@ -1782,6 +2672,23 @@ declare global {
                             name: 'x_0221_fmqa_imp_quiz'
                             element: 'u_date'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'd9ef9e40832c1310429b6260ceaad3cc'
+                        key: {
+                            sys_ui_section: {
+                                id: 'f4ef1e40832c1310429b6260ceaad3b5'
+                                key: {
+                                    name: 'x_0221_fmqa_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'theme'
+                            position: '3'
                         }
                     },
                     {
@@ -1897,6 +2804,7 @@ declare global {
                     {
                         table: 'sys_documentation'
                         id: 'e96690c0f6f24bbf8b268a67dc3062ce'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa_question'
                             element: 'answer'
@@ -1906,6 +2814,7 @@ declare global {
                     {
                         table: 'sys_dictionary'
                         id: 'e9efca45de6f4e15a6de6527d06ce982'
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa_question'
                             element: 'question'
@@ -1937,6 +2846,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_section'
+                        id: 'f4ef1e40832c1310429b6260ceaad3b5'
+                        key: {
+                            name: 'x_0221_fmqa_round'
+                            caption: 'NULL'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                        }
+                    },
+                    {
                         table: 'sn_glider_source_artifact_m2m'
                         id: 'f7d2639c825b45fca78e101eadc84447'
                         key: {
@@ -1950,6 +2874,23 @@ declare global {
                         key: {
                             application_file: 'fbce080077754466847ecae34be92f64'
                             source_artifact: 'b4284819516a4d8589b26734cf442e4f'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'fa812e44832c1310429b6260ceaad374'
+                        key: {
+                            sys_ui_section: {
+                                id: '36812a40832c1310429b6260ceaad3a4'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'round'
+                            position: '4'
                         }
                     },
                     {
@@ -1984,6 +2925,23 @@ declare global {
                         key: {
                             name: 'x_0221_fmqa_question'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'fe812e44832c1310429b6260ceaad371'
+                        key: {
+                            sys_ui_section: {
+                                id: '36812a40832c1310429b6260ceaad3a4'
+                                key: {
+                                    name: 'x_0221_fmqa_quiz_round'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: '.begin_split'
+                            position: '0'
                         }
                     },
                     {
