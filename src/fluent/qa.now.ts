@@ -1,4 +1,4 @@
-import { Table, StringColumn, ChoiceColumn } from '@servicenow/sdk/core';
+import { Table, StringColumn, ChoiceColumn } from '@servicenow/sdk/core'
 
 export const x_0221_fmqa_qa = Table({
     name: 'x_0221_fmqa_qa',
@@ -16,9 +16,27 @@ export const x_0221_fmqa_qa = Table({
         language: ChoiceColumn({
             label: 'Language',
             choices: {
-                en: 'English',
-                nl: 'Nederlands',
+                en: {
+                    label: 'English',
+                    sequence: 1,
+                },
+                nl: {
+                    label: 'Nederlands',
+                    sequence: 2,
+                },
             },
+            maxLength: 40,
         }),
     },
-});
+    actions: {
+        read: true,
+        update: true,
+        delete: false,
+        create: true,
+    },
+    allowClientScripts: true,
+    allowConfiguration: false,
+    allowNewFields: true,
+    allowUiActions: true,
+    allowWebServiceAccess: true,
+})

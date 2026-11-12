@@ -18,6 +18,8 @@ RestApi({
             script: `(function process(request, response) {
     response.setBody({ ok: true, xml: 'fubar' });
 })(request, response)`,
+            consumes: 'application/json',
+            produces: 'application/json',
         },
     ],
 })

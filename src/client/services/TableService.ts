@@ -1,64 +1,96 @@
 // Extend Window interface to include g_ck property
 declare global {
-    interface Window {
-        g_ck: string;
-    }
+  interface Window {
+    g_ck: string;
+  }
 }
-
-interface Options {
-    fields?: string[];
-    query?: string;
-    includeDisplayValues?: boolean;
-}
-
-
 
 export class TableService {
-    private readonly table: string;
+  private readonly table: string;
 
-    constructor(table: string) {
-        this.table = table;
+  constructor(table: string) {
+    this.table = table;
+  }
+
+  async get(sysId: string, options: any = {}) {
+    const defaultOptions = {
+        sysparm_exclude_reference_link: 'true'
     }
+    const searchParamString = getSearchParamString(options, defaultOptions);
+    try {
+      const response = await fetch(
+        `/api/now/table/${this.table}/${sysId}${searchParamString}`,
+        {
+          method: 'GET',
+          headers: {
+            Accept: 'application/json',
+            'X-UserToken': window.g_ck,
+          },
+        },
+      );
 
-    async get(options: Options = {}) {
-        try {
-            const searchParams = new URLSearchParams();
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(
+          errorData.error?.message || `HTTP error ${response.status}`,
+        );
+      }
 
-            if (options.fields) {
-                searchParams.set('sysparm_fields', options.fields.join(','));
-            }
-
-            if (options.query) {
-                searchParams.set('sysparm_query', options.query);
-            }
-
-            if (options.includeDisplayValues) {
-                searchParams.set('sysparm_display_value', 'all');
-            }
-
-            const response = await fetch(
-                `/api/now/table/${this.table}?${searchParams.toString()}`,
-                {
-                    method: 'GET',
-                    headers: {
-                        Accept: 'application/json',
-                        'X-UserToken': window.g_ck,
-                    },
-                },
-            );
-
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(
-                    errorData.error?.message || `HTTP error ${response.status}`,
-                );
-            }
-
-            const { result } = await response.json();
-            return result || [];
-        } catch (error) {
-            console.error('Error fetching records:', error);
-            throw error;
-        }
+      const { result } = await response.json();
+      return result;
+    } catch (error) {
+      console.error(`Error fetching incident ${sysId}:`, error);
+      throw error;
     }
+  }
+
+  async list(options: any = {}) {
+    const defaultOptions = {
+        sysparm_fields: 'sys_id,sys_created_on'
+    }
+    const searchParamString = getSearchParamString(options);
+    try {
+      const response = await fetch(
+        `/api/now/table/${this.table}${searchParamString}`,
+        {
+          method: 'GET',
+          headers: {
+            Accept: 'application/json',
+            'X-UserToken': window.g_ck,
+          },
+        },
+      );
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(
+          errorData.error?.message || `HTTP error ${response.status}`,
+        );
+      }
+
+      const { result } = await response.json();
+      return result || [];
+    } catch (error) {
+      console.error('Error fetching incidents:', error);
+      throw error;
+    }
+  }
+}
+
+function getSearchParamString(options: any = {}, defaultOptions = {}) {
+  const searchParams = new URLSearchParams();
+  
+  options = {
+    ...defaultOptions,
+    ...options,
+  }
+  const keys = Object.keys(options);
+  if (keys.length === 0) return '';
+
+  keys.forEach((key) => {
+    console.log(key);
+    searchParams.set(key, options[key]);
+  });
+
+  return `?${searchParams.toString()}`;
 }

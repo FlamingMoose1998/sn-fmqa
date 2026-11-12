@@ -17,10 +17,12 @@ export const x_0221_fmqa_quiz = Table({
         }),
         date: DateColumn({
             label: 'Date',
+            maxLength: 40,
         }),
         audience: ReferenceColumn({
             label: 'Audience',
             referenceTable: 'x_0221_fmqa_audience',
+            maxLength: 32,
         }),
         description: StringColumn({
             label: 'Description',
@@ -43,4 +45,11 @@ export const x_0221_fmqa_quiz = Table({
         numberOfDigits: 6,
         prefix: 'QUIZ',
     },
+    index: [
+        {
+            name: 'index',
+            unique: false,
+            element: 'audience',
+        },
+    ],
 })

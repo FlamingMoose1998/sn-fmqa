@@ -1,4 +1,4 @@
-import { Table, StringColumn, GenericColumn } from '@servicenow/sdk/core';
+import { Table, StringColumn, GenericColumn } from '@servicenow/sdk/core'
 
 export const x_0221_fmqa_category = Table({
     name: 'x_0221_fmqa_category',
@@ -13,6 +13,18 @@ export const x_0221_fmqa_category = Table({
         color: GenericColumn({
             columnType: 'color',
             label: 'Color',
+            maxLength: 40,
         }),
     },
-});
+    actions: {
+        read: true,
+        update: true,
+        delete: false,
+        create: true,
+    },
+    allowClientScripts: true,
+    allowConfiguration: false,
+    allowNewFields: true,
+    allowUiActions: true,
+    allowWebServiceAccess: true,
+})

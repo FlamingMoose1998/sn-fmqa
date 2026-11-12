@@ -1,4 +1,4 @@
-import { Table, StringColumn } from '@servicenow/sdk/core';
+import { Table, StringColumn } from '@servicenow/sdk/core'
 
 export const x_0221_fmqa_audience = Table({
     name: 'x_0221_fmqa_audience',
@@ -13,6 +13,17 @@ export const x_0221_fmqa_audience = Table({
         color: StringColumn({
             label: 'Color',
             maxLength: 20,
-        })
+        }),
     },
-});
+    actions: {
+        read: true,
+        update: true,
+        delete: false,
+        create: true,
+    },
+    allowClientScripts: true,
+    allowConfiguration: false,
+    allowNewFields: true,
+    allowUiActions: true,
+    allowWebServiceAccess: true,
+})

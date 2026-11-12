@@ -1,5 +1,5 @@
-import '@servicenow/sdk/global';
-import { Record } from '@servicenow/sdk/core';
+import '@servicenow/sdk/global'
+import { Record, default_view } from '@servicenow/sdk/core'
 
 // Explicit relationship: Quiz → Rounds (via quiz_round m2m)
 const quizRoundsRel = Record({
@@ -25,8 +25,9 @@ const quizRoundsRel = Record({
         current.addQuery('sys_id', 'NULL');
     }
 })(current, parent);`,
+        sys_name: 'Quiz Rounds',
     },
-});
+})
 
 // Explicit relationship: Round → Questions (via round_question m2m)
 const roundQuestionsRel = Record({
@@ -52,8 +53,9 @@ const roundQuestionsRel = Record({
         current.addQuery('sys_id', 'NULL');
     }
 })(current, parent);`,
+        sys_name: 'Round Questions',
     },
-});
+})
 
 // Related list container on Quiz form
 const quizRelatedList = Record({
@@ -63,7 +65,7 @@ const quizRelatedList = Record({
         name: 'x_0221_fmqa_quiz',
         view: 'Default view',
     },
-});
+})
 
 Record({
     $id: Now.ID['quiz-rounds-entry'],
@@ -73,7 +75,7 @@ Record({
         position: 0,
         related_list: `REL:${quizRoundsRel}`,
     },
-});
+})
 
 // Related list container on Round form
 const roundRelatedList = Record({
@@ -81,9 +83,12 @@ const roundRelatedList = Record({
     table: 'sys_ui_related_list',
     data: {
         name: 'x_0221_fmqa_round',
-        view: 'Default view',
+        view: default_view,
+        calculated_name: 'Round - Default view',
+        sys_domain: 'global',
+        sys_domain_path: '/',
     },
-});
+})
 
 Record({
     $id: Now.ID['round-questions-entry'],
@@ -93,4 +98,4 @@ Record({
         position: 0,
         related_list: `REL:${roundQuestionsRel}`,
     },
-});
+})

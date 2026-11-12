@@ -1,4 +1,4 @@
-import { Table, StringColumn } from '@servicenow/sdk/core';
+import { Table, StringColumn } from '@servicenow/sdk/core'
 
 export const x_0221_fmqa_raw_json = Table({
     name: 'x_0221_fmqa_raw_json',
@@ -15,4 +15,15 @@ export const x_0221_fmqa_raw_json = Table({
             maxLength: 10000,
         }),
     },
-});
+    actions: {
+        read: true,
+        update: true,
+        delete: false,
+        create: true,
+    },
+    allowClientScripts: true,
+    allowConfiguration: false,
+    allowNewFields: true,
+    allowUiActions: true,
+    allowWebServiceAccess: true,
+})
