@@ -2254,6 +2254,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '80a733564fd7486c811bbbef81d1b7ce'
+                        key: {
+                            name: 'x_0221_fmqa_raw_json'
+                            element: 'quiz'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '82266efaed664dd48d5ceaf753442566'
                         key: {
@@ -3758,6 +3766,15 @@ declare global {
                         id: 'd2e13b318c874db481c2aa245cf47277'
                         key: {
                             name: 'x_0221_fmqa_quiz_round'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'd4b345d3f7c54f9bb722350e9a3148e9'
+                        key: {
+                            name: 'x_0221_fmqa_raw_json'
+                            element: 'quiz'
+                            language: 'en'
                         }
                     },
                     {

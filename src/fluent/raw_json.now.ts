@@ -1,4 +1,4 @@
-import { Table, StringColumn } from '@servicenow/sdk/core'
+import { Table, StringColumn, ReferenceColumn } from '@servicenow/sdk/core'
 
 export const x_0221_fmqa_raw_json = Table({
     name: 'x_0221_fmqa_raw_json',
@@ -14,6 +14,12 @@ export const x_0221_fmqa_raw_json = Table({
             label: 'JSON',
             maxLength: 10000,
         }),
+        quiz: ReferenceColumn({
+            label: 'Quiz',
+            referenceTable: 'x_0221_fmqa_quiz',
+            maxLength: 32,
+        }),
+
     },
     actions: {
         read: true,
