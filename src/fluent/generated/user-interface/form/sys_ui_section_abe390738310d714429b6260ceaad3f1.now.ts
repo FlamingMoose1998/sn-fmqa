@@ -22,11 +22,20 @@ Record({
     },
 })
 Record({
-    $id: Now.ID['afe3987b8350d714429b6260ceaad316'],
+    $id: Now.ID['6caafa51832c1b10429b6260ceaad374'],
+    table: 'sys_ui_element',
+    data: {
+        element: 'quiz',
+        position: 1,
+        sys_ui_section: 'abe390738310d714429b6260ceaad3f1',
+    },
+})
+Record({
+    $id: Now.ID['28aafa51832c1b10429b6260ceaad375'],
     table: 'sys_ui_element',
     data: {
         element: 'json',
-        position: 1,
+        position: 2,
         sys_ui_section: 'abe390738310d714429b6260ceaad3f1',
     },
 })

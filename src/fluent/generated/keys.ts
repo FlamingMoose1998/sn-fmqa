@@ -1069,6 +1069,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '28aafa51832c1b10429b6260ceaad375'
+                        key: {
+                            sys_ui_section: {
+                                id: 'abe390738310d714429b6260ceaad3f1'
+                                key: {
+                                    name: 'x_0221_fmqa_raw_json'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'json'
+                            position: '2'
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '28d3947b8350d714429b6260ceaad315'
                         key: {
@@ -2143,6 +2160,23 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '6caafa51832c1b10429b6260ceaad374'
+                        key: {
+                            sys_ui_section: {
+                                id: 'abe390738310d714429b6260ceaad3f1'
+                                key: {
+                                    name: 'x_0221_fmqa_raw_json'
+                                    caption: 'NULL'
+                                    view: 'Default view'
+                                    sys_domain: 'global'
+                                }
+                            }
+                            element: 'quiz'
+                            position: '1'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '6d11475b50cb4ff8b49867eb8114c9c0'
                         key: {
@@ -2982,7 +3016,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '9fd8edf458d741bc8a20858e93fa43a0'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main'
                         }
@@ -3169,7 +3203,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'af288e16ea614617a9bbeb41ad69f408'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main.js.map'
                         }
@@ -3177,6 +3211,7 @@ declare global {
                     {
                         table: 'sys_ui_element'
                         id: 'afe3987b8350d714429b6260ceaad316'
+                        deleted: true
                         key: {
                             sys_ui_section: {
                                 id: 'abe390738310d714429b6260ceaad3f1'

@@ -14,6 +14,10 @@ DataTools.prototype = {
       gr.deleteMultiple();
     })
   },
+
+  createQuizFromRaw,
+  createQuizByName,
+
 }
 
 
@@ -34,4 +38,22 @@ function getTableNames(exempt = []) {
   }
 
   return tableNames;
+}
+
+function createQuizByName(name){
+  const gr = new GlideRecord('x_0221_fmqa_raw_json')
+  if (gr.get('name', name)){
+	return createQuizFromRaw(gr);
+  }
+}
+
+
+function createQuizFromRaw(grRaw){
+  const s = grRaw.getValue('json')
+  const json = JSON.parse(s);
+
+  const ioq = new x_0221_fmqa.ioQuiz()
+  const quizSysId = ioq.write(json);	
+  grRaw.setValue('quiz', quizSysId);
+  grRaw.update();
 }
