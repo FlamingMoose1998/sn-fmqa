@@ -1,0 +1,56 @@
+.tm-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.tm-heading {
+    margin: 0 0 20px;
+    font-size: var(--now-static-font-size--xl, 1.5rem);
+    color: rgb(var(--now-color_text--primary, 16, 23, 26));
+}
+
+.tm-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tm-th {
+    text-align: left;
+    padding: 10px 12px;
+    font-size: var(--now-static-font-size--md, 1rem);
+    color: rgb(var(--now-color_text--secondary, 35, 46, 51));
+    border-bottom: 2px solid rgb(var(--now-color_text--tertiary, 55, 68, 74));
+}
+
+.tm-cell {
+    padding: 10px 12px;
+    font-size: var(--now-static-font-size--md, 1rem);
+    color: rgb(var(--now-color_text--primary, 16, 23, 26));
+    border-bottom: 1px solid rgba(var(--now-color_text--tertiary, 55, 68, 74), 0.3);
+    vertical-align: middle;
+}
+
+.tm-center {
+    text-align: center;
+}
+
+.tm-label {
+    font-weight: 600;
+}
+
+.tm-tech {
+    margin-left: 6px;
+    font-size: var(--now-static-font-size--sm, 0.75rem);
+    color: rgb(var(--now-color_text--tertiary, 55, 68, 74));
+}
+
+.tm-link {
+    color: rgb(var(--now-color_text--primary, 16, 23, 26));
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.tm-link:hover {
+    opacity: 0.7;
+}
