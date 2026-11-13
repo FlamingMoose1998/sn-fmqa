@@ -30,6 +30,7 @@ function DownloadXml(){
             'quiz',
             'round',
             'question',
+            'qa',
             'quiz_round',
             'round_question',
             'audience', 

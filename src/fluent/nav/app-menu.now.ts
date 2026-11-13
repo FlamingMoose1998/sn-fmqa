@@ -186,3 +186,21 @@ Record({
         uncancelable: false,
     },
 })
+
+Record({
+    $id: Now.ID['module-table-manager'],
+    table: 'sys_app_module',
+    data: {
+        title: 'Table Manager',
+        application: appMenu,
+        link_type: 'DIRECT',
+        name: 'x_0221_fmqa_table_manager.do',
+        active: true,
+        order: 3020,
+        override_menu_roles: false,
+        require_confirmation: false,
+        sys_domain: 'global',
+        sys_domain_path: '/',
+        uncancelable: false,
+    },
+})

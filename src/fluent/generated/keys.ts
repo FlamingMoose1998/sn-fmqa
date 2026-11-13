@@ -176,6 +176,10 @@ declare global {
                         table: 'sys_app_module'
                         id: 'f7bd6701d8604d4e8c0eac61b6edffe6'
                     }
+                    'module-table-manager': {
+                        table: 'sys_app_module'
+                        id: 'd3c6ac1253064a31bbc145ba6c628b18'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: '135f57da808247b0b1e88b3352b75d11'
@@ -1194,6 +1198,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ux_lib_asset'
+                        id: '3406ef9bac1a4d57ba2f5e56513ae26b'
+                        key: {
+                            name: 'x_0221_fmqa/pages/tableManager/main'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '3460b730d592490b9c9bb9f2f3ac0f62'
                         key: {
@@ -1516,6 +1527,14 @@ declare global {
                             name: 'x_0221_fmqa_round_question'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '464a3981b5aa4d9bbc6d863b384ff80f'
+                        key: {
+                            application_file: 'b770e97cf21042d098d6f45bbea451de'
+                            source_artifact: 'd201cc37fc334dbfa6bf16b1c86071d8'
                         }
                     },
                     {
@@ -2401,6 +2420,22 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '85d40490aa0848ef8c0e874744d2fcab'
+                        key: {
+                            application_file: '61e4c34064e74ab9ae9e6618258bc926'
+                            source_artifact: 'd201cc37fc334dbfa6bf16b1c86071d8'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '85ead2fd29bc407b98aeacd122066217'
+                        key: {
+                            application_file: 'cce7bbec42934e5db331c0d32ba89fb0'
+                            source_artifact: 'd201cc37fc334dbfa6bf16b1c86071d8'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '8688b5d083601310429b6260ceaad31c'
                         key: {
@@ -3236,6 +3271,14 @@ declare global {
                     },
                     {
                         table: 'sn_glider_source_artifact_m2m'
+                        id: 'b631660fb6d14d4a8e3923cb2720ef9c'
+                        key: {
+                            application_file: '3406ef9bac1a4d57ba2f5e56513ae26b'
+                            source_artifact: 'd201cc37fc334dbfa6bf16b1c86071d8'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
                         id: 'b662c3d528a14447baf7ca3ecd8d44f4'
                         deleted: true
                         key: {
@@ -3275,6 +3318,13 @@ declare global {
                             }
                             element: 'audience'
                             position: '5'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'b770e97cf21042d098d6f45bbea451de'
+                        key: {
+                            name: 'x_0221_fmqa/pages/tableManager/main.js.map'
                         }
                     },
                     {
@@ -3343,6 +3393,14 @@ declare global {
                         key: {
                             application_file: '32c47991bc8f43fda07ca788c548254f'
                             source_artifact: '4f9fe476e7624351a10c113b6e9d9f8c'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'bcccdda6310d466da1c45d213ea24010'
+                        key: {
+                            application_file: '32c47991bc8f43fda07ca788c548254f'
+                            source_artifact: 'd201cc37fc334dbfa6bf16b1c86071d8'
                         }
                     },
                     {
@@ -3625,6 +3683,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_page'
+                        id: 'cce7bbec42934e5db331c0d32ba89fb0'
+                        key: {
+                            endpoint: 'x_0221_fmqa_table_manager.do'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'cd1278612e124168a3fb90086bdf38f2'
                         key: {
@@ -3759,6 +3824,13 @@ declare global {
                         key: {
                             name: 'x_0221_fmqa_qa'
                             element: 'question'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact'
+                        id: 'd201cc37fc334dbfa6bf16b1c86071d8'
+                        key: {
+                            name: 'x_0221_fmqa_table_manager.do - BYOUI Files'
                         }
                     },
                     {
