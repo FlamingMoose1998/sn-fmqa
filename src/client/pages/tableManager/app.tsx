@@ -2,7 +2,7 @@ import React from 'react'
 import TableRow from './tableRow'
 import './app.css'
 
-const TABLES = [
+const tableList = [
     { label: 'Quiz', table: 'x_0221_fmqa_quiz' },
     { label: 'Round', table: 'x_0221_fmqa_round' },
     { label: 'Question', table: 'x_0221_fmqa_question' },
@@ -21,13 +21,13 @@ export default function App() {
             <table className="tm-table">
                 <thead>
                     <tr>
-                        <th className="tm-th">Table</th>
+                        <th className="tm-th">Table name [technical name]</th>
                         <th className="tm-th tm-center">Records</th>
                         <th className="tm-th tm-center">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {TABLES.map((t) => (
+                    {tableList.map((t) => (
                         <TableRow key={t.table} label={t.label} table={t.table} />
                     ))}
                 </tbody>

@@ -17,6 +17,7 @@ DataTools.prototype = {
 
   createQuizFromRaw,
   createQuizByName,
+  createAll,
 
 }
 
@@ -56,4 +57,15 @@ function createQuizFromRaw(grRaw){
   const quizSysId = ioq.write(json);	
   grRaw.setValue('quiz', quizSysId);
   grRaw.update();
+}
+
+function createAll(){
+  const gr = new GlideRecord('x_0221_fmqa_raw_json')
+  gr.addNullQuery('quiz');
+  gr.addQuery('name!=all');
+  gr.query();
+
+  while (gr.next()){
+	createQuizFromRaw(gr);
+  }
 }

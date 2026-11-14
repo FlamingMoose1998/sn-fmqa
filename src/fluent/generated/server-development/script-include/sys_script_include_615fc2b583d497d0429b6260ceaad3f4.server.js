@@ -45,10 +45,9 @@ ioQuestion.prototype = {
     questionIndex
   }) {
     this.logger.log('write')
-    gs.info('wrrote')
     const io = new x_0221_fmqa.io();
 
-    questionJson.category = io.getSysId('x_0221_fmqa_category', 'name', questionJson.category);
+    questionJson.category = io.getSysId('x_0221_fmqa_category', 'name', questionJson.category || 'no category');
     questionJson.filename = `${questionJson.mediaPath}/${questionJson.media}`;
     questionJson.media_type = questionJson.mediaType;
 

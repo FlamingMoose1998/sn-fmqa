@@ -4,6 +4,7 @@ import { Button } from '@servicenow/react-components/Button'
 import { Modal } from '@servicenow/react-components/Modal'
 import { Loader } from '@servicenow/react-components/Loader'
 import { fetchCount, deleteAllRecords } from './api'
+import { TableService } from '../../services/TableService'
 
 interface Props {
     label: string
@@ -17,7 +18,7 @@ export default function TableRow({ label, table }: Props) {
 
     const loadCount = async () => {
         setCount(null)
-        const c = await fetchCount(table)
+        const c = await new TableService(table).count() //fetchCount(table)
         setCount(c)
     }
 
@@ -31,7 +32,7 @@ export default function TableRow({ label, table }: Props) {
         await loadCount()
     }
 
-    const listUrl = `/${table}_list.do?sysparm_clear_stack=true`
+    const listUrl = `/now/nav/ui/classic/params/target/${table}_list.do?sysparm_clear_stack=true`
 
     return (
         <tr>

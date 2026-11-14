@@ -7,25 +7,27 @@ declare global {
 
 export class TableService {
   private readonly table: string;
+  private readonly headers: any;
 
   constructor(table: string) {
     this.table = table;
+    this.headers = {
+      Accept: 'application/json',
+      'X-UserToken': window.g_ck,
+    };
   }
 
   async get(sysId: string, options: any = {}) {
     const defaultOptions = {
-        sysparm_exclude_reference_link: 'true'
-    }
+      sysparm_exclude_reference_link: 'true',
+    };
     const searchParamString = getSearchParamString(options, defaultOptions);
     try {
       const response = await fetch(
         `/api/now/table/${this.table}/${sysId}${searchParamString}`,
         {
           method: 'GET',
-          headers: {
-            Accept: 'application/json',
-            'X-UserToken': window.g_ck,
-          },
+          headers: this.headers,
         },
       );
 
@@ -46,18 +48,15 @@ export class TableService {
 
   async list(options: any = {}) {
     const defaultOptions = {
-        sysparm_fields: 'sys_id,sys_created_on'
-    }
-    const searchParamString = getSearchParamString(options);
+      sysparm_fields: 'sys_id,sys_created_on',
+    };
+    const searchParamString = getSearchParamString(options, defaultOptions);
     try {
       const response = await fetch(
         `/api/now/table/${this.table}${searchParamString}`,
         {
           method: 'GET',
-          headers: {
-            Accept: 'application/json',
-            'X-UserToken': window.g_ck,
-          },
+          headers: this.headers,
         },
       );
 
@@ -75,15 +74,35 @@ export class TableService {
       throw error;
     }
   }
+
+  async count(){
+    const res = await fetch(`/api/now/stats/${this.table}?sysparm_count=true`, { headers: this.headers })
+    const json = await res.json()
+    return parseInt(json.result.stats.count, 10)
+  }
+
+  async delete(){
+    // NOT TESTED YET
+    const records: Array<{ sys_id: string }> = await this.list({ sysparm_fields: 'sys_id'})
+    for (const rec of records) {
+        await fetch(`/api/now/table/${this.table}/${rec.sys_id}`, {
+            method: 'DELETE',
+            headers: this.headers,
+        })
+    }
+    return records.length
+
+  }
 }
+
 
 function getSearchParamString(options: any = {}, defaultOptions = {}) {
   const searchParams = new URLSearchParams();
-  
+
   options = {
     ...defaultOptions,
     ...options,
-  }
+  };
   const keys = Object.keys(options);
   if (keys.length === 0) return '';
 

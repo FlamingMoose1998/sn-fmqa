@@ -3016,7 +3016,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '9fd8edf458d741bc8a20858e93fa43a0'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main'
                         }
@@ -3203,7 +3203,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: 'af288e16ea614617a9bbeb41ad69f408'
-                        deleted: false
+                        deleted: true
                         key: {
                             name: 'x_0221_fmqa/pages/incidentManager/main.js.map'
                         }
