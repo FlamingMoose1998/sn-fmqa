@@ -81,6 +81,24 @@ Record({
 })
 
 Record({
+    $id: Now.ID['module-question-search'],
+    table: 'sys_app_module',
+    data: {
+        title: 'Question Search',
+        application: appMenu,
+        link_type: 'DIRECT',
+        name: 'x_0221_fmqa_ws_question_search.do',
+        active: true,
+        order: 1040,
+        override_menu_roles: false,
+        require_confirmation: false,
+        sys_domain: 'global',
+        sys_domain_path: '/',
+        uncancelable: false,
+    },
+})
+
+Record({
     $id: Now.ID['separator-support-data'],
     table: 'sys_app_module',
     data: {

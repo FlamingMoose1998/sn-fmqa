@@ -82,7 +82,6 @@ export class TableService {
   }
 
   async delete(){
-    // NOT TESTED YET
     const records: Array<{ sys_id: string }> = await this.list({ sysparm_fields: 'sys_id'})
     for (const rec of records) {
         await fetch(`/api/now/table/${this.table}/${rec.sys_id}`, {
