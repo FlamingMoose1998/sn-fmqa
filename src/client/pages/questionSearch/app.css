@@ -1,0 +1,113 @@
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.question-search-app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-family: var(--now-font-family, 'Source Sans Pro', Arial, sans-serif);
+    color: rgb(var(--now-color_text--primary, 16, 23, 26));
+}
+
+.page-title {
+    font-size: var(--now-static-font-size--xl, 1.5rem);
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: rgb(var(--now-color_text--primary, 16, 23, 26));
+}
+
+/* Search bar */
+.search-bar {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.search-input-wrapper {
+    flex: 1;
+}
+
+.search-button-wrapper {
+    flex-shrink: 0;
+}
+
+/* Filter bar */
+.filter-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.filter-item {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Loader */
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+/* Results count */
+.results-count {
+    font-size: var(--now-static-font-size--sm, 0.75rem);
+    color: rgb(var(--now-color_text--secondary, 35, 46, 51));
+    margin-bottom: 0.75rem;
+}
+
+/* No results */
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    color: rgb(var(--now-color_text--tertiary, 55, 68, 74));
+    font-size: var(--now-static-font-size--md, 1rem);
+}
+
+/* Result table */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+    text-align: left;
+    padding: 0.625rem 0.75rem;
+    border-bottom: 1px solid rgb(var(--now-color_divider--primary, 218, 222, 224));
+    font-size: var(--now-static-font-size--md, 1rem);
+    color: rgb(var(--now-color_text--primary, 16, 23, 26));
+}
+
+.result-table th {
+    font-weight: 600;
+    font-size: var(--now-static-font-size--sm, 0.75rem);
+    color: rgb(var(--now-color_text--secondary, 35, 46, 51));
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.result-table tbody tr:hover {
+    background-color: rgba(var(--now-color_surface--hover, 218, 222, 224), 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-bar {
+        flex-direction: column;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
