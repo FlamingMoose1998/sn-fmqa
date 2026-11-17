@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Button } from '@servicenow/react-components/Button'
-
 import { Modal } from '@servicenow/react-components/Modal'
 import { Loader } from '@servicenow/react-components/Loader'
-import { fetchCount, deleteAllRecords } from './api'
 import { TableService } from '../../services/TableService'
 
 interface Props {
@@ -27,7 +25,7 @@ export default function TableRow({ label, table }: Props) {
     const handleDelete = async () => {
         setModalOpen(false)
         setDeleting(true)
-        await deleteAllRecords(table)
+        await new TableService(table).delete();
         setDeleting(false)
         await loadCount()
     }
