@@ -115,6 +115,10 @@ declare global {
                         table: 'sys_script_include'
                         id: 'cb275db4839c1f90429b6260ceaad346'
                     }
+                    ceabc95f83a85b50429b6260ceaad3e6: {
+                        table: 'sys_security_acl'
+                        id: 'ceabc95f83a85b50429b6260ceaad3e6'
+                    }
                     de664a71839497d0429b6260ceaad3f8: {
                         table: 'sys_app_module'
                         id: 'de664a71839497d0429b6260ceaad3f8'
@@ -740,7 +744,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '12cbde24273a495abda27bf154e9dea3'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_0221_fmqa/vendor-react-dom--7ff6a980'
                         }
@@ -1940,6 +1944,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '4eab4d5f83a85b50429b6260ceaad3be'
+                        key: {
+                            sys_security_acl: 'ceabc95f83a85b50429b6260ceaad3e6'
+                            sys_user_role: {
+                                id: '2831a114c611228501d4ea6c309d626d'
+                                key: {
+                                    name: 'admin'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_ui_list_element'
                         id: '4eefde40832c1310429b6260ceaad350'
                         key: {
@@ -2408,6 +2425,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_page'
+                        id: '807b455f83a85b50429b6260ceaad3e7'
+                        deleted: true
+                        key: {
+                            endpoint: 'x_0221_fmqa_ui page overview.do'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '80a733564fd7486c811bbbef81d1b7ce'
                         key: {
@@ -2661,7 +2686,7 @@ declare global {
                     {
                         table: 'sys_ux_lib_asset'
                         id: '8757819c4a3e4985bfc99c2a4feb74de'
-                        deleted: true
+                        deleted: false
                         key: {
                             name: 'x_0221_fmqa/vendor-react-dom--7ff6a980.js.map'
                         }
@@ -3381,6 +3406,13 @@ declare global {
                         key: {
                             category: 'x_0221_fmqa_quiz'
                             prefix: 'QUIZ'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'b33749f9f3d7436ab32bbae81e99b45f'
+                        key: {
+                            name: 'x_0221_fmqa/pages/overview/main'
                         }
                     },
                     {
@@ -4250,6 +4282,13 @@ declare global {
                         key: {
                             name: 'x_0221_fmqa_question'
                             element: 'question'
+                        }
+                    },
+                    {
+                        table: 'sys_ux_lib_asset'
+                        id: 'eab0b604a8444e94a36e9aebfc1a9650'
+                        key: {
+                            name: 'x_0221_fmqa/pages/overview/main.js.map'
                         }
                     },
                     {

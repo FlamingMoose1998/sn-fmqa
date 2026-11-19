@@ -8,6 +8,7 @@ import {
     type CategoryRecord,
     type QuestionRecord,
 } from './api'
+import { getQuestions } from '../../services/QuizService'
 import './app.css'
 
 interface FilterItem {
@@ -48,14 +49,22 @@ export default function App() {
             cats: FilterItem[],
             diffs: FilterItem[]
         ) => {
+            console.log('performing search', text, cats, diffs)
             setLoading(true)
             setHasSearched(true)
             try {
+                const results = await getQuestions({
+                    text,
+                    categoryIds: cats.map((c) => c.id),
+                })
+                console.log('results', results);
+/*
                 const results = await searchQuestions(
                     text,
                     cats.map((c) => c.id),
                     diffs.map((d) => d.id)
                 )
+*/
                 setQuestions(results)
             } catch {
                 setQuestions([])

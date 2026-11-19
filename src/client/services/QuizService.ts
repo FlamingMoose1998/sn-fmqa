@@ -1,19 +1,25 @@
 import { TableService } from "./TableService.js";
 
 interface SearchState {
-  text: string,
+  text?: string,
+  categoryIds?: string[],
 }
 
 export async function getQuestions(searchState: SearchState){
   const {
-    text
+    text,
+    categoryIds = [],
   } = searchState;
 
-
-  let query = ''
+  const andQueryTerms = [];
   if (text){
-    query += `qa.questionCONTAINS${text}^ORqa.answerCONTAINS${text}`;
+    andQueryTerms.push(`qa.questionCONTAINS${text}^ORqa.answerCONTAINS${text}`);
   }
+  if (categoryIds.length > 0){
+    andQueryTerms.push(`categoryIN${categoryIds.join(',')}`);
+  }
+
+  const query = andQueryTerms.join('^');
 
   const ts = new TableService('x_0221_fmqa_question')
   const options = {
@@ -24,7 +30,8 @@ export async function getQuestions(searchState: SearchState){
   }
   console.log('options', options)
   const list = await ts.list(options)
-
   console.log('list', list)
+
+
   return list;
 }
