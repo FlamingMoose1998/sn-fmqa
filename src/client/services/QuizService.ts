@@ -1,26 +1,6 @@
 import { TableService } from "./TableService.js";
 
-interface SearchState {
-  text?: string,
-  categoryIds?: string[],
-}
-
-export async function getQuestions(searchState: SearchState){
-  const {
-    text,
-    categoryIds = [],
-  } = searchState;
-
-  const andQueryTerms = [];
-  if (text){
-    andQueryTerms.push(`qa.questionCONTAINS${text}^ORqa.answerCONTAINS${text}`);
-  }
-  if (categoryIds.length > 0){
-    andQueryTerms.push(`categoryIN${categoryIds.join(',')}`);
-  }
-
-  const query = andQueryTerms.join('^');
-
+export async function getQuestions(query: string){
   const ts = new TableService('x_0221_fmqa_question')
   const options = {
     sysparm_query: query,
@@ -28,10 +8,17 @@ export async function getQuestions(searchState: SearchState){
     sysparm_exclude_reference_link: 'true',
     sysparm_display_value: 'all',
   }
-  console.log('options', options)
-  const list = await ts.list(options)
-  console.log('list', list)
+  const questionList = await ts.list(options)
 
+  return questionList;
+}
+export async function getCategories(){
+  const ts = new TableService('x_0221_fmqa_category')
+  const options = {
+    sysparm_query: 'label!=NULL',
+    sysparm_fields: 'sys_id,name,label',
+  }
+  const categoryList = await ts.list(options);
 
-  return list;
+  return categoryList;
 }

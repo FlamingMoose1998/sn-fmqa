@@ -18,6 +18,7 @@ function ClientTest(){
 
 async function run(){
     console.log('run')
-    const list = await getQuestions({ text: 'Frankrijk'})
+    const query = 'qa.questionLIKEFrankrijk^ORqa.answerLIKEFrankrijk'
+    const list = await getQuestions(query)
     console.log('list in run', list);
 }

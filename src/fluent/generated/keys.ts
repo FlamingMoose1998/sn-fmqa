@@ -1057,6 +1057,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '25be127c67d944ef9b1eb6ebdf76242f'
+                        key: {
+                            application_file: 'b33749f9f3d7436ab32bbae81e99b45f'
+                            source_artifact: '268231646fff4e28b0649df34956290c'
+                        }
+                    },
+                    {
                         table: 'sys_ui_element'
                         id: '2619d86983d0d3d0429b6260ceaad36c'
                         key: {
@@ -1071,6 +1079,13 @@ declare global {
                             }
                             element: 'name'
                             position: '0'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact'
+                        id: '268231646fff4e28b0649df34956290c'
+                        key: {
+                            name: 'x_0221_fmqa_ws_overview.do - BYOUI Files'
                         }
                     },
                     {
@@ -1394,6 +1409,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '3e23c3bec8994334a186b1a46a0199ea'
+                        key: {
+                            application_file: '47555d96afa345b28ee80eab871b44e3'
+                            source_artifact: '268231646fff4e28b0649df34956290c'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '3e8d99c4aa0f461c9381dbec0114e218'
                         key: {
@@ -1697,6 +1720,13 @@ declare global {
                                 }
                             }
                             element: 'p4'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_page'
+                        id: '47555d96afa345b28ee80eab871b44e3'
+                        key: {
+                            endpoint: 'x_0221_fmqa_ws_overview.do'
                         }
                     },
                     {
@@ -2080,6 +2110,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '5acc2fea9f594715b4f2afb0c79cdeeb'
+                        key: {
+                            name: 'x_0221_fmqa_category'
+                            element: 'label'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '5bd6ffc040914d209146054b107110b2'
                         key: {
@@ -2118,6 +2156,14 @@ declare global {
                         key: {
                             application_file: '9f318b79816f432e85a30e4c4ff71684'
                             source_artifact: '4f9fe476e7624351a10c113b6e9d9f8c'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '5fdb76d8e0224a53842c90e42fffa392'
+                        key: {
+                            application_file: 'eab0b604a8444e94a36e9aebfc1a9650'
+                            source_artifact: '268231646fff4e28b0649df34956290c'
                         }
                     },
                     {
@@ -2324,6 +2370,14 @@ declare global {
                         id: '73aa6857eb584c30ada494518e1cf4cc'
                         key: {
                             name: 'x_0221_fmqa/pages/questionSearch/main'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: '73f0cde0c0484463bc2542f070402794'
+                        key: {
+                            application_file: '8757819c4a3e4985bfc99c2a4feb74de'
+                            source_artifact: '268231646fff4e28b0649df34956290c'
                         }
                     },
                     {
@@ -2697,6 +2751,15 @@ declare global {
                         key: {
                             name: 'x_0221_fmqa_audience'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '89e110cc123a44d793db573c48903ddf'
+                        key: {
+                            name: 'x_0221_fmqa_category'
+                            element: 'label'
+                            language: 'en'
                         }
                     },
                     {
@@ -3238,6 +3301,14 @@ declare global {
                             value: 'en'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sn_glider_source_artifact_m2m'
+                        id: 'a299d1ce004a4d00b39a0807b9b8d413'
+                        key: {
+                            application_file: '12cbde24273a495abda27bf154e9dea3'
+                            source_artifact: '268231646fff4e28b0649df34956290c'
                         }
                     },
                     {

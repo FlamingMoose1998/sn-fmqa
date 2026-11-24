@@ -31,6 +31,8 @@ export default function App() {
     const [loading, setLoading] = useState(false)
     const [hasSearched, setHasSearched] = useState(false)
 
+    const query = `qa.questionLIKE${searchText}^ORqa.answerLIKE${searchText}`
+
     const searchTextRef = useRef(searchText)
     searchTextRef.current = searchText
 
@@ -53,10 +55,7 @@ export default function App() {
             setLoading(true)
             setHasSearched(true)
             try {
-                const results = await getQuestions({
-                    text,
-                    categoryIds: cats.map((c) => c.id),
-                })
+                const results = await getQuestions(query)
                 console.log('results', results);
 /*
                 const results = await searchQuestions(
